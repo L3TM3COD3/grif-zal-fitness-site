@@ -1,0 +1,269 @@
+.header {
+    height: 15%;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+
+    &__main {
+        border: 1px solid black;
+        height: 70%;
+        background: $black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__logo {
+            width: 10%;
+        }
+
+        &__menu {
+            width: 30%;
+            
+            &__list {
+                text-transform: uppercase;
+                font-size: 24px;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                // &__item {
+                //     transition: .3s;
+
+                //     &:hover {
+                //         transform: translateY(-10%);
+                //     }
+                // }
+
+                &__item__link {
+                    color: white;
+                    transition: .3s;
+                    border-radius: 0px;
+                    padding: 2px;
+                    transition: .3s;
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    
+                    &:hover {
+                        background-image: linear-gradient(270deg, $low-blue, $high-blue, $low-orange, $high-orange);
+                        background-size: 800% 800%;
+                        
+                        -webkit-animation: AnimationName 5s ease infinite;
+                        -moz-animation: AnimationName 5s ease infinite;
+                        -o-animation: AnimationName 5s ease infinite;
+                        animation: AnimationName 5s ease infinite;
+                        
+                        @-webkit-keyframes AnimationName {
+                            0%{background-position:100% 50%}
+                            50%{background-position:0% 50%}
+                            100%{background-position:100% 50%}
+                        }
+                        @-moz-keyframes AnimationName {
+                            0%{background-position:100% 50%}
+                            50%{background-position:0% 50%}
+                            100%{background-position:100% 50%}
+                        }
+                        @-o-keyframes AnimationName {
+                            0%{background-position:100% 50%}
+                            50%{background-position:0% 50%}
+                            100%{background-position:100% 50%}
+                        }
+                        @keyframes AnimationName { 
+                            0%{background-position:100% 50%}
+                            50%{background-position:0% 50%}
+                            100%{background-position:100% 50%}
+                        }
+                    }
+
+                    &--active {
+                        color: white;
+                        padding-left: 6px;
+                        padding-right: 6px;
+                        background: linear-gradient(270deg, $low-blue, $high-blue, $low-orange, $high-orange);
+                        background-size: 800% 800%;
+                        
+                        -webkit-animation: AnimationName 12s ease infinite;
+                        -moz-animation: AnimationName 12s ease infinite;
+                        -o-animation: AnimationName 12s ease infinite;
+                        animation: AnimationName 12s ease infinite;
+                        
+                        @-webkit-keyframes AnimationName {
+                            0%{background-position:0% 50%}
+                            50%{background-position:100% 50%}
+                            100%{background-position:0% 50%}
+                        }
+                        @-moz-keyframes AnimationName {
+                            0%{background-position:0% 50%}
+                            50%{background-position:100% 50%}
+                            100%{background-position:0% 50%}
+                        }
+                        @-o-keyframes AnimationName {
+                            0%{background-position:0% 50%}
+                            50%{background-position:100% 50%}
+                            100%{background-position:0% 50%}
+                        }
+                        @keyframes AnimationName { 
+                            0%{background-position:0% 50%}
+                            50%{background-position:100% 50%}
+                            100%{background-position:0% 50%}
+                        }
+                    }
+                }
+            }
+        }
+
+        &__contacts {
+            min-width: 10%;
+            font-family: pobedabold;
+            font-size: 18px;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            letter-spacing: 2px;
+
+            &__phone__link {
+                float: right;
+                transition: .3s;
+
+                &:hover {
+                    color: $low-orange;
+                }
+            }
+
+            &__shedule {
+                position: relative;
+
+                &:hover .header__main__contacts__shedule__dropdown {
+                    right: -5%;
+                    opacity: 1;
+                }
+
+                &__title {
+                    font-style: normal;
+                    color: $low-orange;
+                    transition: .3s;
+                    cursor: pointer;
+    
+                    &:hover {
+                        color: white;
+                    }
+                }
+
+                &__dropdown {
+                    padding: 10%;
+                    font-family: cervo;
+                    font-size: 16px;
+                    border: 1px solid black;
+                    position: absolute;
+                    top: 105%;
+                    right: -1000%;
+                    background: white;
+                    color: black;
+                    width: 115%;
+                    height: 750%;
+                    opacity: 0;
+                    font-style: normal;
+                    transition: right .3s, opacity 1.5s;
+                    border-radius: 2px;
+                    -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.7);
+                    -moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.7);
+                    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.7);
+
+                    &__content {
+                        min-height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        &__location__title {
+                            font-weight: bold;
+                            text-transform: uppercase;
+                        }
+
+                        &__time__title {
+                            font-weight: bold;
+                            text-transform: uppercase;
+                        }
+
+                        &__time__content {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    &__sub {
+        height: 30%;
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(270deg, $low-blue, $high-blue, $low-orange, $high-orange);
+        background-size: 800% 800%;
+        
+        -webkit-animation: AnimationName 17s ease infinite;
+        -moz-animation: AnimationName 17s ease infinite;
+        -o-animation: AnimationName 17s ease infinite;
+        animation: AnimationName 17s ease infinite;
+        
+        @-webkit-keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @-moz-keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @-o-keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @keyframes AnimationName { 
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+
+        &__list {
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-around;
+            min-width: 40%;
+            font-family: pobedabold;
+
+            &::before {
+                height: 10%;
+                content: '';
+                background-image: url('../../img/icons/triangle.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 20px;
+                height: 20px;
+            }
+
+            &__item {
+                font-size: 18px;
+                letter-spacing: 2px;
+                transition: .3s;
+                border-bottom: 1px solid transparent;
+            }
+
+            &__item:hover {
+                border-bottom: 1px solid white;
+            }
+        }
+    }
+}
