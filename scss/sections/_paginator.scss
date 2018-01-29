@@ -1,0 +1,89 @@
+.paginator {
+    position: fixed;
+    top: 35%;
+    right: 3%;
+    height: 30%;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover .paginator__list__item__desc {
+                opacity: 1;
+            }
+
+            &:hover .paginator__list__item__link__block {
+                transform: translate(2px, 2px);
+                -webkit-box-shadow: 5px 3px 21px 0px rgba(0,0,0,0);
+                -moz-box-shadow: 5px 3px 21px 0px rgba(0,0,0,0);
+                box-shadow: 5px 3px 21px 0px rgba(0,0,0,0);
+                background-image: linear-gradient(270deg, $low-blue, $high-blue, $low-orange, $high-orange);
+                background-size: 800% 800%;
+                
+                -webkit-animation: AnimationName 1s ease infinite;
+                -moz-animation: AnimationName 1s ease infinite;
+                -o-animation: AnimationName 1s ease infinite;
+                animation: AnimationName 1s ease infinite;
+                
+                @-webkit-keyframes AnimationName {
+                    0%{background-position:100% 50%}
+                    50%{background-position:0% 50%}
+                    100%{background-position:100% 50%}
+                }
+                @-moz-keyframes AnimationName {
+                    0%{background-position:100% 50%}
+                    50%{background-position:0% 50%}
+                    100%{background-position:100% 50%}
+                }
+                @-o-keyframes AnimationName {
+                    0%{background-position:100% 50%}
+                    50%{background-position:0% 50%}
+                    100%{background-position:100% 50%}
+                }
+                @keyframes AnimationName { 
+                    0%{background-position:100% 50%}
+                    50%{background-position:0% 50%}
+                    100%{background-position:100% 50%}
+                }
+            }
+
+            &__desc {
+                color: $black;
+                background: white;
+                min-width: 100px;
+                margin-right: 10%;
+                text-align: center;
+                text-transform: uppercase;
+                opacity: 0;
+                transition: .3s;
+            }
+
+            &__link {
+
+                &__block {
+                    background: white;
+                    width: 20px;
+                    height: 20px;
+                    -webkit-box-shadow: 5px 3px 21px 0px rgba(0,0,0,0.82);
+                    -moz-box-shadow: 5px 3px 21px 0px rgba(0,0,0,0.82);
+                    box-shadow: 5px 3px 21px 0px rgba(0,0,0,0.82);
+                    transition: .5s;
+                }
+            }
+        }
+    }
+}
+
+.link {
+    width: 100%;
+    height: 100%;
+}

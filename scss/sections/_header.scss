@@ -1,5 +1,6 @@
 .header {
     height: 15%;
+    width: 100%;
 
     &__container {
         display: flex;
@@ -32,13 +33,13 @@
                 justify-content: space-around;
                 align-items: center;
 
-                // &__item {
-                //     transition: .3s;
+                &__item {
+                    transition: .3s;
 
-                //     &:hover {
-                //         transform: translateY(-10%);
-                //     }
-                // }
+                    &:hover {
+                        transform: translateY(10%);
+                    }
+                }
 
                 &__item__link {
                     color: white;
@@ -50,68 +51,15 @@
                     padding-right: 6px;
                     
                     &:hover {
-                        background-image: linear-gradient(270deg, $low-blue, $high-blue, $low-orange, $high-orange);
-                        background-size: 800% 800%;
-                        
-                        -webkit-animation: AnimationName 5s ease infinite;
-                        -moz-animation: AnimationName 5s ease infinite;
-                        -o-animation: AnimationName 5s ease infinite;
-                        animation: AnimationName 5s ease infinite;
-                        
-                        @-webkit-keyframes AnimationName {
-                            0%{background-position:100% 50%}
-                            50%{background-position:0% 50%}
-                            100%{background-position:100% 50%}
-                        }
-                        @-moz-keyframes AnimationName {
-                            0%{background-position:100% 50%}
-                            50%{background-position:0% 50%}
-                            100%{background-position:100% 50%}
-                        }
-                        @-o-keyframes AnimationName {
-                            0%{background-position:100% 50%}
-                            50%{background-position:0% 50%}
-                            100%{background-position:100% 50%}
-                        }
-                        @keyframes AnimationName { 
-                            0%{background-position:100% 50%}
-                            50%{background-position:0% 50%}
-                            100%{background-position:100% 50%}
-                        }
+                        color: $black;
+                        background-color: white;
                     }
 
                     &--active {
-                        color: white;
+                        color: $black;
+                        background: white;
                         padding-left: 6px;
                         padding-right: 6px;
-                        background: linear-gradient(270deg, $low-blue, $high-blue, $low-orange, $high-orange);
-                        background-size: 800% 800%;
-                        
-                        -webkit-animation: AnimationName 12s ease infinite;
-                        -moz-animation: AnimationName 12s ease infinite;
-                        -o-animation: AnimationName 12s ease infinite;
-                        animation: AnimationName 12s ease infinite;
-                        
-                        @-webkit-keyframes AnimationName {
-                            0%{background-position:0% 50%}
-                            50%{background-position:100% 50%}
-                            100%{background-position:0% 50%}
-                        }
-                        @-moz-keyframes AnimationName {
-                            0%{background-position:0% 50%}
-                            50%{background-position:100% 50%}
-                            100%{background-position:0% 50%}
-                        }
-                        @-o-keyframes AnimationName {
-                            0%{background-position:0% 50%}
-                            50%{background-position:100% 50%}
-                            100%{background-position:0% 50%}
-                        }
-                        @keyframes AnimationName { 
-                            0%{background-position:0% 50%}
-                            50%{background-position:100% 50%}
-                            100%{background-position:0% 50%}
-                        }
                     }
                 }
             }
