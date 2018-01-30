@@ -1,0 +1,29 @@
+.slider {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        width: 90%;
+        height: 90%;
+        border: 5px solid red;
+        border-radius: 20px;
+    }
+
+    &__btns {
+
+        &__list {
+            border: 2px solid red;
+            display: flex;
+            justify-content: space-between;
+
+            &__item {
+                background: $black;        
+                line-height: .8;
+                font-size: 64px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
