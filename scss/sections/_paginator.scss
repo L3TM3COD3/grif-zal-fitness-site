@@ -22,10 +22,7 @@
             }
 
             &:hover .paginator__list__item__link__block {
-                transform: translate(2px, 2px);
-                -webkit-box-shadow: 5px 3px 21px 0px rgba(0,0,0,0);
-                -moz-box-shadow: 5px 3px 21px 0px rgba(0,0,0,0);
-                box-shadow: 5px 3px 21px 0px rgba(0,0,0,0);
+                transform: translateY(4px);
                 background-image: linear-gradient(270deg, $low-blue, $high-blue, $low-orange, $high-orange);
                 background-size: 800% 800%;
                 
@@ -73,9 +70,6 @@
                     background: white;
                     width: 20px;
                     height: 20px;
-                    -webkit-box-shadow: 5px 3px 21px 0px rgba(0,0,0,0.82);
-                    -moz-box-shadow: 5px 3px 21px 0px rgba(0,0,0,0.82);
-                    box-shadow: 5px 3px 21px 0px rgba(0,0,0,0.82);
                     transition: .5s;
                 }
             }

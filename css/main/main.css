@@ -619,47 +619,14 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: -webkit-gradient(linear, right top, left top, from(#ff6600), color-stop(#fea500), color-stop(#67d4fb), to(#0060ff));
-  background: -webkit-linear-gradient(right, #ff6600, #fea500, #67d4fb, #0060ff);
-  background: -o-linear-gradient(right, #ff6600, #fea500, #67d4fb, #0060ff);
-  background: linear-gradient(270deg, #ff6600, #fea500, #67d4fb, #0060ff);
-  background-size: 800% 800%;
-  -webkit-animation: AnimationName 600s ease infinite;
-  -moz-animation: AnimationName 600s ease infinite;
-  -o-animation: AnimationName 600s ease infinite;
-  animation: AnimationName 600s ease infinite; }
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
-
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
-
-@-o-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
-
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
+  background: -webkit-gradient(linear, right top, left top, from(#ff6600), to(#fea500));
+  background: -webkit-linear-gradient(right, #ff6600, #fea500);
+  background: -o-linear-gradient(right, #ff6600, #fea500);
+  background: linear-gradient(270deg, #ff6600, #fea500);
+  -webkit-box-shadow: 0px 9px 60px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 60px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 9px 60px -1px rgba(0, 0, 0, 0.75);
+  z-index: 5; }
   .slider__container {
     width: 95%;
     height: 92%;
@@ -838,7 +805,7 @@ a {
     top: 0%;
     left: 8%;
     text-transform: uppercase;
-    opacity: .3;
+    opacity: .4;
     letter-spacing: 70px; }
   .slider__slides__adv__list {
     height: 80%;
@@ -920,7 +887,7 @@ a {
     top: 0%;
     left: 5%;
     text-transform: uppercase;
-    opacity: .3;
+    opacity: .4;
     letter-spacing: 70px; }
   .slider__slides__equip__list {
     height: 80%;
@@ -1026,12 +993,9 @@ a {
       .paginator__list__item:hover .paginator__list__item__desc {
         opacity: 1; }
       .paginator__list__item:hover .paginator__list__item__link__block {
-        -webkit-transform: translate(2px, 2px);
-        -ms-transform: translate(2px, 2px);
-        transform: translate(2px, 2px);
-        -webkit-box-shadow: 5px 3px 21px 0px transparent;
-        -moz-box-shadow: 5px 3px 21px 0px transparent;
-        box-shadow: 5px 3px 21px 0px transparent;
+        -webkit-transform: translateY(4px);
+        -ms-transform: translateY(4px);
+        transform: translateY(4px);
         background-image: -webkit-gradient(linear, right top, left top, from(#0060ff), color-stop(#67d4fb), color-stop(#fea500), to(#ff6600));
         background-image: -webkit-linear-gradient(right, #0060ff, #67d4fb, #fea500, #ff6600);
         background-image: -o-linear-gradient(right, #0060ff, #67d4fb, #fea500, #ff6600);
@@ -1088,9 +1052,6 @@ a {
         background: white;
         width: 20px;
         height: 20px;
-        -webkit-box-shadow: 5px 3px 21px 0px rgba(0, 0, 0, 0.82);
-        -moz-box-shadow: 5px 3px 21px 0px rgba(0, 0, 0, 0.82);
-        box-shadow: 5px 3px 21px 0px rgba(0, 0, 0, 0.82);
         -webkit-transition: .5s;
         -o-transition: .5s;
         transition: .5s; }
@@ -1098,3 +1059,31 @@ a {
 .link {
   width: 100%;
   height: 100%; }
+
+.gallery {
+  background: -webkit-gradient(linear, right top, left top, from(#67d4fb), to(#0060ff));
+  background: -webkit-linear-gradient(right, #67d4fb, #0060ff);
+  background: -o-linear-gradient(right, #67d4fb, #0060ff);
+  background: linear-gradient(270deg, #67d4fb, #0060ff); }
+  .gallery__container {
+    padding: 1%;
+    width: 100%;
+    height: 100%; }
+    .gallery__container__list {
+      width: 100%;
+      height: 100%;
+      border: 3px dashed red;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+      flex-flow: wrap row; }
+      .gallery__container__list__item {
+        border: 2px solid black;
+        width: 10%;
+        height: 20%; }
+        .gallery__container__list__item__photo {
+          width: 100%;
+          height: 100%; }

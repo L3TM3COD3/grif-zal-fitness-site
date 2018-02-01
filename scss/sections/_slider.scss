@@ -2,34 +2,39 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(270deg, $high-orange, $low-orange, $high-blue, $low-blue);
-    background-size: 800% 800%;
+    background: linear-gradient(270deg, $high-orange, $low-orange);
+    -webkit-box-shadow: 0px 9px 60px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 9px 60px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 9px 60px -1px rgba(0,0,0,0.75);
+    z-index: 5;
+    // background: linear-gradient(270deg, $high-orange, $low-orange, $high-blue, $low-blue);
+    // background-size: 800% 800%;
     
-    -webkit-animation: AnimationName 600s ease infinite;
-    -moz-animation: AnimationName 600s ease infinite;
-    -o-animation: AnimationName 600s ease infinite;
-    animation: AnimationName 600s ease infinite;
+    // -webkit-animation: AnimationName 600s ease infinite;
+    // -moz-animation: AnimationName 600s ease infinite;
+    // -o-animation: AnimationName 600s ease infinite;
+    // animation: AnimationName 600s ease infinite;
     
-    @-webkit-keyframes AnimationName {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
-    @-moz-keyframes AnimationName {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
-    @-o-keyframes AnimationName {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
-    @keyframes AnimationName { 
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
+    // @-webkit-keyframes AnimationName {
+    //     0%{background-position:0% 50%}
+    //     50%{background-position:100% 50%}
+    //     100%{background-position:0% 50%}
+    // }
+    // @-moz-keyframes AnimationName {
+    //     0%{background-position:0% 50%}
+    //     50%{background-position:100% 50%}
+    //     100%{background-position:0% 50%}
+    // }
+    // @-o-keyframes AnimationName {
+    //     0%{background-position:0% 50%}
+    //     50%{background-position:100% 50%}
+    //     100%{background-position:0% 50%}
+    // }
+    // @keyframes AnimationName { 
+    //     0%{background-position:0% 50%}
+    //     50%{background-position:100% 50%}
+    //     100%{background-position:0% 50%}
+    // }
 
     &__container {
         width: 95%;
