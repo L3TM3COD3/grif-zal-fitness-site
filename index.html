@@ -71,10 +71,10 @@
 				<div class="header__sub">
 					<ul class="header__sub__list">
 						<li class="header__sub__list__item">
-							<a href="#adv" class="header__sub__list__item__link">Особенности</a>
+							<a href="#" id="moveToAdv--subHeader" class="header__sub__list__item__link">Особенности</a>
 						</li>
 						<li class="header__sub__list__item">
-							<a href="#equip" class="header__sub__list__item__link">Оборудование зала</a>
+							<a href="#equip" id="moveToEquip--subHeader" class="header__sub__list__item__link">Оборудование зала</a>
 						</li>
 						<li class="header__sub__list__item">
 							<a href="#gallery" class="header__sub__list__item__link">Фотогалерея</a>
@@ -119,7 +119,7 @@
 								абонементы
 							</li>
 						</a>
-						<a href="#adv" class="hero__content__buttons__list__link hero__content__buttons__list__link--two">
+						<a href="#" id='moveToEquip--heroMenu' class="hero__content__buttons__list__link hero__content__buttons__list__link--two">
 							<li class="hero__content__buttons__list__item">
 								узнать о нас больше
 							</li>
@@ -137,97 +137,159 @@
 
 		<section data-anchor="slider" class="section slider">
 			<div class="slider__container">
-				<div class="slider__btns">
-					<ul class="slider__btns__list">
-						<li class="slider__btns__list__item">
-							<a href="#" id="moveToAdv" class="slider__btns__list__item__btn">
-								<div class="slider__btns__list__item__btn__title">
-									Особенности<br><span style="font-size: 40px;">нашего фитнес-клуба</span>
-								</div>
-							</a>
+				<div class="slider__ctrl">
+					<ul class="slider__ctrl__list">
+						<li class="slider__ctrl__list__item">
+							<div class="slider__ctrl__list__item__title">
+								Особенности
+							</div>
+							<div class="slider__ctrl__list__item__desc">Узнайте отличительные особенности нашего фитнес-клуба</div>
+							<a href="#" id="moveToAdv" class="slider__ctrl__list__item__btn">узнать</a>
 						</li>
-						<li class="slider__btns__list__item">
-							<a href="#" id="moveToEquip" class="slider__btns__list__item__btn">
-								<div class="slider__btns__list__item__btn__title">
-									Оборудование<br><span style="font-size: 40px;">нашего фитнес-клуба</span>
-								</div>
-							</a>
+						<li class="slider__ctrl__list__item">
+							<div class="slider__ctrl__list__item__title">
+								Оборудование
+							</div>
+							<div class="slider__ctrl__list__item__desc">Узнайте о оборудовании наших тренажерного и аэробного залов</div>
+							<a href="#" id="moveToEquip" class="slider__ctrl__list__item__btn">узнать</a>
 						</li>
 					</ul>	
 				</div>
 				<div class="slider__slides">
 					<div data-anchor="slide-adv" class="slider__slides__adv slide">
-						<ul class="slider__slides__adv__list">
-							<li class="slider__slides__adv__list__item">
-								<div class="slider__slides__adv__list__item__icon-block">
-									<img src="" alt="" class="slider__slides__adv__list__item__icon-block__icon">
-								</div>
-								<div class="slider__slides__adv__list__item__txt">
-									<div class="slider__slides__adv__list__item__txt__title"></div>
-									<div class="slider__slides__adv__list__item__txt__desc"></div>
-								</div>
-							</li>
-							<li class="slider__slides__adv__list__item">
-								<div class="slider__slides__adv__list__item__icon-block">
-									<img src="" alt="" class="slider__slides__adv__list__item__icon-block__icon">
-								</div>
-								<div class="slider__slides__adv__list__item__txt">
-									<div class="slider__slides__adv__list__item__txt__title"></div>
-									<div class="slider__slides__adv__list__item__txt__desc"></div>
-								</div>
-							</li>
-							<li class="slider__slides__adv__list__item">
-								<div class="slider__slides__adv__list__item__icon-block">
-									<img src="" alt="" class="slider__slides__adv__list__item__icon-block__icon">
-								</div>
-								<div class="slider__slides__adv__list__item__txt">
-									<div class="slider__slides__adv__list__item__txt__title"></div>
-									<div class="slider__slides__adv__list__item__txt__desc"></div>
-								</div>
-							</li>
-							<li class="slider__slides__adv__list__item">
-								<div class="slider__slides__adv__list__item__icon-block">
-									<img src="" alt="" class="slider__slides__adv__list__item__icon-block__icon">
-								</div>
-								<div class="slider__slides__adv__list__item__txt">
-									<div class="slider__slides__adv__list__item__txt__title"></div>
-									<div class="slider__slides__adv__list__item__txt__desc"></div>
-								</div>
-							</li>
-						</ul>
+						<div class="slider__slides__limiter">
+							<div class="slider__slides__adv__title">Особенности</div>
+							<ul class="slider__slides__adv__list">
+								<li class="slider__slides__adv__list__item">
+									<div class="slider__slides__adv__list__item__icon-block">
+										<img src="img/icons/14.png" alt="" class="slider__slides__adv__list__item__icon-block__icon">
+									</div>
+									<div class="slider__slides__adv__list__item__txt">
+										<div class="slider__slides__adv__list__item__txt__title">ЗНАЕМ ТОЛК</div>
+										<div class="slider__slides__adv__list__item__txt__desc">
+											На протяжении более 14 лет работы фитнес-клуб «грифф» 
+											помогает добиться занимающимся желаемого результата.
+										</div>
+									</div>
+								</li>
+								<li class="slider__slides__adv__list__item">
+									<div class="slider__slides__adv__list__item__icon-block">
+										<img src="img/icons/trainer.png" alt="" class="slider__slides__adv__list__item__icon-block__icon">
+									</div>
+									<div class="slider__slides__adv__list__item__txt">
+										<div class="slider__slides__adv__list__item__txt__title">КВАЛИФИЦИРОВАННЫЕ ТРЕНЕРА</div>
+										<div class="slider__slides__adv__list__item__txt__desc">
+											В тренерском составе работают люди с высшим спортивным и педагогическим образованием,
+											 специалисты по ЛФК, инструкторы по базовой аэробике и инструкторы, повышающие свою 
+											 квалификацию на фитнес-конвенциях, а так же Мастера Спорта России по пауэрлифтингу и действующие спортсмены.
+											</div>
+									</div>
+								</li>
+								<li class="slider__slides__adv__list__item">
+									<div class="slider__slides__adv__list__item__icon-block">
+										<img src="img/icons/trainer.png" alt="" class="slider__slides__adv__list__item__icon-block__icon">
+									</div>
+									<div class="slider__slides__adv__list__item__txt">
+										<div class="slider__slides__adv__list__item__txt__title">групповые тренировки</div>
+										<div class="slider__slides__adv__list__item__txt__desc">
+											В фитнес-клубе «ГРИФФ» Вы сможете посетить множество групповых тренировок. 
+											Мы проводим: степ, пилатес, йога,  hot iron, athletic stretch, BEST FIT.
+											<div class="slider__slides__adv__list__item__txt__desc__more">
+												<a href="" class="slider__slides__adv__list__item__txt__desc__more__link">
+													УЗНАТЬ БОЛЬШЕ > > 
+												</a>
+											 </div>
+										</div>
+									</div>
+								</li>
+								<li class="slider__slides__adv__list__item">
+									<div class="slider__slides__adv__list__item__icon-block">
+										<img src="img/icons/trainer.png" alt="" class="slider__slides__adv__list__item__icon-block__icon">
+									</div>
+									<div class="slider__slides__adv__list__item__txt">
+										<div class="slider__slides__adv__list__item__txt__title">баня и сауна</div>
+										<div class="slider__slides__adv__list__item__txt__desc">
+											Так же Вы сможете посетить финскую сауну (сухой пар) и баню 
+											с русской парной  (печь-каменка).
+											<div class="slider__slides__adv__list__item__txt__desc__more">
+												 <a href="" class="slider__slides__adv__list__item__txt__desc__more__link">
+													УЗНАТЬ БОЛЬШЕ > > 
+												 </a>
+											 </div> 
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
 					</div>
 					<div data-anchor="slide-equip" class="slider__slides__equip slide">
-						<li class="slider__slides__equip__list__item">
-								<div class="slider__slides__equip__list__item__icon-block">
-									<img src="" alt="" class="slider__slides__equip__list__item__icon-block__icon">
-								</div>
-								<div class="slider__slides__equip__list__item__txt">
-									<div class="slider__slides__equip__list__item__txt__title"></div>
-									<div class="slider__slides__equip__list__item__txt__desc"></div>
-								</div>
-							</li>
-							<li class="slider__slides__equip__list__item">
-								<div class="slider__slides__equip__list__item__icon-block">
-									<img src="" alt="" class="slider__slides__equip__list__item__icon-block__icon">
-								</div>
-								<div class="slider__slides__equip__list__item__txt">
-									<div class="slider__slides__equip__list__item__txt__title"></div>
-									<div class="slider__slides__equip__list__item__txt__desc"></div>
-								</div>
-							</li>
-							<li class="slider__slides__equip__list__item">
-								<div class="slider__slides__equip__list__item__icon-block">
-									<img src="" alt="" class="slider__slides__equip__list__item__icon-block__icon">
-								</div>
-								<div class="slider__slides__equip__list__item__txt">
-									<div class="slider__slides__equip__list__item__txt__title"></div>
-									<div class="slider__slides__equip__list__item__txt__desc"></div>
-								</div>
-							</li>
+						<div class="slider__slides__limiter">
+							<div class="slider__slides__equip__title">Оборудование</div>
+							<ul class="slider__slides__equip__list">
+								<li class="slider__slides__equip__list__item">
+									<div class="slider__slides__equip__list__item__icon-block">
+										<img src="img/icons/trainer.png" alt="" class="slider__slides__equip__list__item__icon-block__icon">
+									</div>
+									<div class="slider__slides__equip__list__item__txt">
+										<div class="slider__slides__equip__list__item__txt__title">тРЕНАЖЕРНЫЙ ЗАЛ</div>
+										<div class="slider__slides__equip__list__item__txt__desc">
+											Имеет в своем распоряжении современные профессиональные тренажеры 
+											(с удобным регулирование рабочего веса), позволяющие тренировать 
+											все группы мышц независимо от уровня подготовленности занимающегося. 
+											Свободные веса: гантельный ряд от 0,5 до кг. до 54 кг. + разборные гантели, штанги
+											 (олимпийские, средние и EZ- грифы).
+											<div class="slider__slides__equip__list__item__txt__desc__more">
+												<a href="" class="slider__slides__equip__list__item__txt__desc__more__link">
+													ФОТОГАЛЕРЕЯ  >>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="slider__slides__equip__list__item">
+									<div class="slider__slides__equip__list__item__icon-block">
+										<img src="img/icons/trainer.png" alt="" class="slider__slides__equip__list__item__icon-block__icon">
+									</div>
+									<div class="slider__slides__equip__list__item__txt">
+										<div class="slider__slides__equip__list__item__txt__title">аэробный зал</div>
+										<div class="slider__slides__equip__list__item__txt__desc">
+											Площадью 125 м2 вмещает до 25 одновременно занимающихся человек. 
+											Степ-платформы, фитболы (шары), бодибары, гантели, миништанги, 
+											оборудование для занятий йогой а Также кардиолиния представлена велосипедами, 
+											элипсоидами, степперами.
+											<div class="slider__slides__equip__list__item__txt__desc__more">
+												<a href="" class="slider__slides__equip__list__item__txt__desc__more__link">
+													ФОТОГАЛЕРЕЯ  >>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="slider__slides__equip__list__item">
+									<div class="slider__slides__equip__list__item__icon-block">
+										<img src="img/icons/trainer.png" alt="" class="slider__slides__equip__list__item__icon-block__icon">
+									</div>
+									<div class="slider__slides__equip__list__item__txt">
+										<div class="slider__slides__equip__list__item__txt__title">аэробный зал</div>
+										<div class="slider__slides__equip__list__item__txt__desc">
+											Площадью 125 м2 вмещает до 25 одновременно занимающихся человек.
+											Степ-платформы, фитболы (шары), бодибары, гантели, миништанги, оборудование
+											для занятий йогой а Также кардиолиния представлена велосипедами,
+											элипсоидами, степперами.
+											<div class="slider__slides__equip__list__item__txt__desc__more">
+												<a href="" class="slider__slides__equip__list__item__txt__desc__more__link">
+													ФОТОГАЛЕРЕЯ  >>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
 		<section data-anchor='map' class="section map">
 
@@ -278,20 +340,35 @@
 
 	$('#moveToAdv').click(function(e){
 		e.preventDefault();
-		$.fn.fullpage.moveTo(2, 1);
+		$.fn.fullpage.moveTo(2, 0);
 	});
 
 	$('#moveToEquip').click(function(e){
 		e.preventDefault();
-		$.fn.fullpage.moveTo(2, 0);
+		$.fn.fullpage.moveTo(2, 1);
 	});
 
 	$('#moveToAdv--paginator').click(function(e){
 		e.preventDefault();
-		$.fn.fullpage.moveTo(2, 1);
+		$.fn.fullpage.moveTo(2, 0);
 	});
 
 	$('#moveToEquip--paginator').click(function(e){
+		e.preventDefault();
+		$.fn.fullpage.moveTo(2, 1);
+	});
+
+	$('#moveToAdv--subHeader').click(function(e){
+		e.preventDefault();
+		$.fn.fullpage.moveTo(2, 0);
+	});
+
+	$('#moveToEquip--subHeader').click(function(e){
+		e.preventDefault();
+		$.fn.fullpage.moveTo(2, 1);
+	});
+
+	$('#moveToEquip--heroMenu').click(function(e){
 		e.preventDefault();
 		$.fn.fullpage.moveTo(2, 0);
 	});

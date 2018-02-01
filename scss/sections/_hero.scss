@@ -113,12 +113,12 @@
                     font-size: 28px;
                     text-transform: uppercase;
                     transition: .3s;
-                    -webkit-box-shadow: 0px 0px 42px 3px rgba(0,0,0,0.77);
-                    -moz-box-shadow: 0px 0px 42px 3px rgba(0,0,0,0.77);
-                    box-shadow: 0px 0px 42px 3px rgba(0,0,0,0.77);
+                    -webkit-box-shadow: 0px 10px 42px 3px rgba(0,0,0,0.77);
+                    -moz-box-shadow: 0px 10px 42px 3px rgba(0,0,0,0.77);
+                    box-shadow: 0px 10px 42px 3px rgba(0,0,0,0.77);
 
                     &:hover {
-                        transform: translateY(5px);
+                        transform: translateY(10px);
                         -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
                         -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
                         box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
@@ -127,11 +127,9 @@
 
                     &--one {
                         width: 20%;
-                        border: 3px solid $low-orange;
 
                         &:hover {
-                            border: 3px solid transparent;
-                            background-image: linear-gradient(45deg, $low-orange, $high-orange, $high-blue, $low-blue);
+                            background-image: linear-gradient(45deg, $low-orange, $high-orange);
                             background-size: 800% 800%;
                             
                             -webkit-animation: AnimationName 5s ease infinite;
@@ -164,11 +162,9 @@
 
                     &--two {
                         width: 20%;
-                        border: 3px solid $low-blue;
 
                         &:hover {
-                            border: 3px solid transparent;
-                            background-image: linear-gradient(270deg, $low-blue, $high-blue, $low-orange, $high-orange);
+                            background-image: linear-gradient(270deg, $high-blue, $low-blue);
                             background-size: 800% 800%;
                             
                             -webkit-animation: AnimationName 5s ease infinite;
@@ -196,16 +192,13 @@
                                 50%{background-position:0% 50%}
                                 100%{background-position:100% 50%}
                             }
-                            
                         }
                     }
 
                     &--three {
-                        border: 3px solid $high-orange;
 
                         &:hover {
-                            border: 3px solid transparent;
-                            background-image: linear-gradient(200deg, $low-orange, $high-orange, $low-blue, $high-blue);
+                            background-image: linear-gradient(200deg, $high-orange, $low-orange, $high-blue, $low-blue);
                             background-size: 800% 800%;
                             
                             -webkit-animation: AnimationName 5s ease infinite;
