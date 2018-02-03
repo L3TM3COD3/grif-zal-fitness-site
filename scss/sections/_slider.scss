@@ -56,6 +56,14 @@
         -webkit-box-shadow: 85px 82px 149px -12px rgba(0,0,0,0.45);
         -moz-box-shadow: 85px 82px 149px -12px rgba(0,0,0,0.45);
         box-shadow: 85px 82px 149px -12px rgba(0,0,0,0.45);
+        transition: 1.5s;
+
+        &:hover {
+            -webkit-box-shadow: 20px 17px 40px -10px rgba(0,0,0,0.45);
+            -moz-box-shadow: 20px 17px 40px -10px rgba(0,0,0,0.45);
+            box-shadow: 20px 17px 40px -10px rgba(0,0,0,0.45);
+            transform: translate(15px, 15px);
+        }
 
         &__limiter {
             width: 100%;
@@ -77,9 +85,6 @@
         background: $black;
         width: 35%;
         height: 60%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
         border-bottom: 5px solid $low-orange;
@@ -89,6 +94,14 @@
         align-items: center;
         padding-left: 3%;
         padding-right: 3%;
+        transition: 1s;
+
+        &:hover {
+            -webkit-box-shadow: 15px 9px 40px -6px rgba(0,0,0,0.39);
+            -moz-box-shadow: 15px 9px 40px -6px rgba(0,0,0,0.39);
+            box-shadow: 15px 9px 40px -6px rgba(0,0,0,0.39);
+            transform: translate(15px, 15px);
+        }
 
         &__list {
             width: 100%;

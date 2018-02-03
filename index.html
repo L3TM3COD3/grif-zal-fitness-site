@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/lightgallery.css">
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery.fullPage.js"></script>
+  <script src="js/galleryTabs.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -293,104 +294,43 @@
 		</section>
 
 		<section data-anchor='gallery' class="section gallery">
+			<div class="section-name">галерея</div>
 			<div class="gallery__container">
-				<ul class="gallery__container__list" id="lightgallery">
-					<li class="gallery__container__list__item" data-src="img/photos/2016_03_16_172524.jpg">
-						<img align='center' class="gallery__container__list__item__photo" src="img/photos/2016_03_16_172524.jpg">
+				<ul class="gallery__zone">
+					<li id="lightgallery" class="gallery__zone__item gallery__zone__item--1">
+						<div data-src='img/photos/2016_03_16_172524.jpg' class="gallery-overlay">
+							<img src="img/photos/2016_03_16_172524.jpg" alt="" class="gallery__zone__item__photo">
+							<img src="img/photos/21(1).jpg" alt="" class="gallery__zone__item__photo">
+						</div>
+						<div class="gallery__zone__item__title">Тренажерный зал</div>
+						
 					</li>
-					<li class="gallery__container__list__item" data-src="img/photos/21(1).jpg">
-						<img class="gallery__container__list__item__photo" src="img/photos/21(1).jpg">
+					<li class="gallery__zone__item gallery__zone__item--2">
+						<div class="gallery-overlay"></div>
+						<div class="gallery__zone__item__title">Аэробный зал</div>
 					</li>
-					<li class="gallery__container__list__item" data-src="img/photos/42zu1tuhfue.jpg">
-						<img class="gallery__container__list__item__photo" src="img/photos/42zu1tuhfue.jpg">
+					<li class="gallery__zone__item gallery__zone__item--3">
+						<div class="gallery-overlay"></div>
+						<div class="gallery__zone__item__title">Финская сауна</div>
 					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
+					<li class="gallery__zone__item gallery__zone__item--4">
+						<div class="gallery-overlay"></div>
+						<div class="gallery__zone__item__title">Баня</div>
 					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
+					<li class="gallery__zone__item gallery__zone__item--5">
+						<div class="gallery-overlay"></div>
+						<div class="gallery__zone__item__title">Парикмахерская</div>
 					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
-					</li>
-					<li class="gallery__container__list__item" data-src="img/photos">
-						<img class="gallery__container__list__item__photo" src="img/photos">
+					<li class="gallery__zone__item gallery__zone__item--6">
+						<div class="gallery-overlay"></div>
+						<div class="gallery__zone__item__title">Прочее</div>
 					</li>
 				</ul>
 			</div>
 		</section>
 
-		<section data-anchor='map' class="section map">
-
+		<section data-anchor='map' id="map" class="section map">
+				<!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A327ceecfd3ca2716e054b95baefca60053d60a0a08bd22afa74ed0d86b68571e&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script> -->
 		</section>
 	
 	</div>
