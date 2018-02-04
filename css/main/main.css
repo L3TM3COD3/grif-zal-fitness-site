@@ -273,47 +273,10 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background: -webkit-gradient(linear, right top, left top, from(#0060ff), color-stop(#67d4fb), color-stop(#fea500), to(#ff6600));
-    background: -webkit-linear-gradient(right, #0060ff, #67d4fb, #fea500, #ff6600);
-    background: -o-linear-gradient(right, #0060ff, #67d4fb, #fea500, #ff6600);
-    background: linear-gradient(270deg, #0060ff, #67d4fb, #fea500, #ff6600);
-    background-size: 800% 800%;
-    -webkit-animation: AnimationName 17s ease infinite;
-    -moz-animation: AnimationName 17s ease infinite;
-    -o-animation: AnimationName 17s ease infinite;
-    animation: AnimationName 17s ease infinite; }
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
-
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
-
-@-o-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
-
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
+    background: -webkit-gradient(linear, right top, left top, from(#ff6600), color-stop(60%, #fea500));
+    background: -webkit-linear-gradient(right, #ff6600, #fea500 60%);
+    background: -o-linear-gradient(right, #ff6600, #fea500 60%);
+    background: linear-gradient(270deg, #ff6600, #fea500 60%); }
     .header__sub__list {
       text-transform: uppercase;
       display: -webkit-box;
@@ -489,131 +452,22 @@ a {
           .hero__content__buttons__list__link--one {
             width: 20%; }
             .hero__content__buttons__list__link--one:hover {
-              background-image: -webkit-linear-gradient(45deg, #fea500, #ff6600);
-              background-image: -o-linear-gradient(45deg, #fea500, #ff6600);
-              background-image: linear-gradient(45deg, #fea500, #ff6600);
-              background-size: 800% 800%;
-              -webkit-animation: AnimationName 5s ease infinite;
-              -moz-animation: AnimationName 5s ease infinite;
-              -o-animation: AnimationName 5s ease infinite;
-              animation: AnimationName 5s ease infinite; }
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 100% 50%; }
-  50% {
-    background-position: 0% 50%; }
-  100% {
-    background-position: 100% 50%; } }
-
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 100% 50%; }
-  50% {
-    background-position: 0% 50%; }
-  100% {
-    background-position: 100% 50%; } }
-
-@-o-keyframes AnimationName {
-  0% {
-    background-position: 100% 50%; }
-  50% {
-    background-position: 0% 50%; }
-  100% {
-    background-position: 100% 50%; } }
-
-@keyframes AnimationName {
-  0% {
-    background-position: 100% 50%; }
-  50% {
-    background-position: 0% 50%; }
-  100% {
-    background-position: 100% 50%; } }
+              background-image: -webkit-linear-gradient(260deg, #67d4fb, #0060ff);
+              background-image: -o-linear-gradient(260deg, #67d4fb, #0060ff);
+              background-image: linear-gradient(190deg, #67d4fb, #0060ff);
+              color: white; }
           .hero__content__buttons__list__link--two {
             width: 20%; }
             .hero__content__buttons__list__link--two:hover {
-              background-image: -webkit-gradient(linear, right top, left top, from(#67d4fb), to(#0060ff));
-              background-image: -webkit-linear-gradient(right, #67d4fb, #0060ff);
-              background-image: -o-linear-gradient(right, #67d4fb, #0060ff);
-              background-image: linear-gradient(270deg, #67d4fb, #0060ff);
-              background-size: 800% 800%;
-              -webkit-animation: AnimationName 5s ease infinite;
-              -moz-animation: AnimationName 5s ease infinite;
-              -o-animation: AnimationName 5s ease infinite;
-              animation: AnimationName 5s ease infinite; }
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 100% 50%; }
-  50% {
-    background-position: 0% 50%; }
-  100% {
-    background-position: 100% 50%; } }
-
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 100% 50%; }
-  50% {
-    background-position: 0% 50%; }
-  100% {
-    background-position: 100% 50%; } }
-
-@-o-keyframes AnimationName {
-  0% {
-    background-position: 100% 50%; }
-  50% {
-    background-position: 0% 50%; }
-  100% {
-    background-position: 100% 50%; } }
-
-@keyframes AnimationName {
-  0% {
-    background-position: 100% 50%; }
-  50% {
-    background-position: 0% 50%; }
-  100% {
-    background-position: 100% 50%; } }
+              background-image: -webkit-linear-gradient(260deg, #67d4fb, #0060ff);
+              background-image: -o-linear-gradient(260deg, #67d4fb, #0060ff);
+              background-image: linear-gradient(190deg, #67d4fb, #0060ff);
+              color: white; }
           .hero__content__buttons__list__link--three:hover {
-            background-image: -webkit-linear-gradient(250deg, #ff6600, #fea500, #67d4fb, #0060ff);
-            background-image: -o-linear-gradient(250deg, #ff6600, #fea500, #67d4fb, #0060ff);
-            background-image: linear-gradient(200deg, #ff6600, #fea500, #67d4fb, #0060ff);
-            background-size: 800% 800%;
-            -webkit-animation: AnimationName 5s ease infinite;
-            -moz-animation: AnimationName 5s ease infinite;
-            -o-animation: AnimationName 5s ease infinite;
-            animation: AnimationName 5s ease infinite; }
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 100% 50%; }
-  50% {
-    background-position: 0% 50%; }
-  100% {
-    background-position: 100% 50%; } }
-
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 100% 50%; }
-  50% {
-    background-position: 0% 50%; }
-  100% {
-    background-position: 100% 50%; } }
-
-@-o-keyframes AnimationName {
-  0% {
-    background-position: 100% 50%; }
-  50% {
-    background-position: 0% 50%; }
-  100% {
-    background-position: 100% 50%; } }
-
-@keyframes AnimationName {
-  0% {
-    background-position: 100% 50%; }
-  50% {
-    background-position: 0% 50%; }
-  100% {
-    background-position: 100% 50%; } }
+            background-image: -webkit-linear-gradient(260deg, #ff6600, #fea500);
+            background-image: -o-linear-gradient(260deg, #ff6600, #fea500);
+            background-image: linear-gradient(190deg, #ff6600, #fea500);
+            color: white; }
 
 .slider {
   display: -webkit-box;
@@ -1030,47 +884,7 @@ a {
         -webkit-transform: translateY(4px);
         -ms-transform: translateY(4px);
         transform: translateY(4px);
-        background-image: -webkit-gradient(linear, right top, left top, from(#0060ff), color-stop(#67d4fb), color-stop(#fea500), to(#ff6600));
-        background-image: -webkit-linear-gradient(right, #0060ff, #67d4fb, #fea500, #ff6600);
-        background-image: -o-linear-gradient(right, #0060ff, #67d4fb, #fea500, #ff6600);
-        background-image: linear-gradient(270deg, #0060ff, #67d4fb, #fea500, #ff6600);
-        background-size: 800% 800%;
-        -webkit-animation: AnimationName 1s ease infinite;
-        -moz-animation: AnimationName 1s ease infinite;
-        -o-animation: AnimationName 1s ease infinite;
-        animation: AnimationName 1s ease infinite; }
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 100% 50%; }
-  50% {
-    background-position: 0% 50%; }
-  100% {
-    background-position: 100% 50%; } }
-
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 100% 50%; }
-  50% {
-    background-position: 0% 50%; }
-  100% {
-    background-position: 100% 50%; } }
-
-@-o-keyframes AnimationName {
-  0% {
-    background-position: 100% 50%; }
-  50% {
-    background-position: 0% 50%; }
-  100% {
-    background-position: 100% 50%; } }
-
-@keyframes AnimationName {
-  0% {
-    background-position: 100% 50%; }
-  50% {
-    background-position: 0% 50%; }
-  100% {
-    background-position: 100% 50%; } }
+        background: #fea500; }
       .paginator__list__item__desc {
         color: #333333;
         background: white;
@@ -1096,19 +910,30 @@ a {
 
 .gallery {
   height: 10%;
-  background: -webkit-gradient(linear, right top, left top, from(#67d4fb), to(#0060ff));
-  background: -webkit-linear-gradient(right, #67d4fb, #0060ff);
-  background: -o-linear-gradient(right, #67d4fb, #0060ff);
-  background: linear-gradient(270deg, #67d4fb, #0060ff); }
+  background: #333333; }
+  .gallery__hover {
+    border: 1px solid red; }
   .gallery-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: -webkit-gradient(linear, right top, left top, from(#ff6600), to(#fea500));
-    background: -webkit-linear-gradient(right, #ff6600, #fea500);
-    background: -o-linear-gradient(right, #ff6600, #fea500);
-    background: linear-gradient(270deg, #ff6600, #fea500);
-    opacity: .9; }
+    top: 0px;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-transition: .8s;
+    -o-transition: .8s;
+    transition: .8s;
+    color: #fea500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid #fea500; }
   .gallery__container {
     width: 100%;
     height: 100%;
@@ -1148,7 +973,6 @@ a {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      color: white;
       font-size: 42px;
       text-transform: uppercase;
       position: relative;
@@ -1159,10 +983,13 @@ a {
       -o-transition: .3s;
       transition: .3s;
       overflow: hidden; }
+      .gallery__zone__item:hover .gallery-overlay {
+        top: -700px; }
+      .gallery__zone__item:hover {
+        border-top: 5px solid #fea500;
+        border-bottom: 5px solid transparent; }
       .gallery__zone__item__photo {
-        display: none; }
-      .gallery__zone__item__title {
-        z-index: 5; }
+        visibility: hidden; }
       .gallery__zone__item:hover {
         -webkit-box-shadow: 15px 9px 40px -6px rgba(0, 0, 0, 0.39);
         -moz-box-shadow: 15px 9px 40px -6px rgba(0, 0, 0, 0.39);
@@ -1175,7 +1002,8 @@ a {
         background-image: url("../../img/photos/2016_03_16_172524.jpg");
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover; }
+        background-size: cover;
+        background-filter: grayscale(100%); }
       .gallery__zone__item--2 {
         background-image: url("../../img/photos/eqfcpx4x_aa.jpg");
         background-repeat: no-repeat;

@@ -129,34 +129,8 @@
                         width: 20%;
 
                         &:hover {
-                            background-image: linear-gradient(45deg, $low-orange, $high-orange);
-                            background-size: 800% 800%;
-                            
-                            -webkit-animation: AnimationName 5s ease infinite;
-                            -moz-animation: AnimationName 5s ease infinite;
-                            -o-animation: AnimationName 5s ease infinite;
-                            animation: AnimationName 5s ease infinite;
-                            
-                            @-webkit-keyframes AnimationName {
-                                0%{background-position:100% 50%}
-                                50%{background-position:0% 50%}
-                                100%{background-position:100% 50%}
-                            }
-                            @-moz-keyframes AnimationName {
-                                0%{background-position:100% 50%}
-                                50%{background-position:0% 50%}
-                                100%{background-position:100% 50%}
-                            }
-                            @-o-keyframes AnimationName {
-                                0%{background-position:100% 50%}
-                                50%{background-position:0% 50%}
-                                100%{background-position:100% 50%}
-                            }
-                            @keyframes AnimationName { 
-                                0%{background-position:100% 50%}
-                                50%{background-position:0% 50%}
-                                100%{background-position:100% 50%}
-                            }
+                            background-image: linear-gradient(190deg, $high-blue, $low-blue);
+                           color: white;
                         }
                     }
 
@@ -164,68 +138,17 @@
                         width: 20%;
 
                         &:hover {
-                            background-image: linear-gradient(270deg, $high-blue, $low-blue);
-                            background-size: 800% 800%;
-                            
-                            -webkit-animation: AnimationName 5s ease infinite;
-                            -moz-animation: AnimationName 5s ease infinite;
-                            -o-animation: AnimationName 5s ease infinite;
-                            animation: AnimationName 5s ease infinite;
-                            
-                            @-webkit-keyframes AnimationName {
-                                0%{background-position:100% 50%}
-                                50%{background-position:0% 50%}
-                                100%{background-position:100% 50%}
-                            }
-                            @-moz-keyframes AnimationName {
-                                0%{background-position:100% 50%}
-                                50%{background-position:0% 50%}
-                                100%{background-position:100% 50%}
-                            }
-                            @-o-keyframes AnimationName {
-                                0%{background-position:100% 50%}
-                                50%{background-position:0% 50%}
-                                100%{background-position:100% 50%}
-                            }
-                            @keyframes AnimationName { 
-                                0%{background-position:100% 50%}
-                                50%{background-position:0% 50%}
-                                100%{background-position:100% 50%}
-                            }
+                            background-image: linear-gradient(190deg, $high-blue, $low-blue);
+                            color: white;
                         }
                     }
 
                     &--three {
 
                         &:hover {
-                            background-image: linear-gradient(200deg, $high-orange, $low-orange, $high-blue, $low-blue);
-                            background-size: 800% 800%;
+                            background-image: linear-gradient(190deg, $high-orange, $low-orange);
+                            color: white;
                             
-                            -webkit-animation: AnimationName 5s ease infinite;
-                            -moz-animation: AnimationName 5s ease infinite;
-                            -o-animation: AnimationName 5s ease infinite;
-                            animation: AnimationName 5s ease infinite;
-                            
-                            @-webkit-keyframes AnimationName {
-                                0%{background-position:100% 50%}
-                                50%{background-position:0% 50%}
-                                100%{background-position:100% 50%}
-                            }
-                            @-moz-keyframes AnimationName {
-                                0%{background-position:100% 50%}
-                                50%{background-position:0% 50%}
-                                100%{background-position:100% 50%}
-                            }
-                            @-o-keyframes AnimationName {
-                                0%{background-position:100% 50%}
-                                50%{background-position:0% 50%}
-                                100%{background-position:100% 50%}
-                            }
-                            @keyframes AnimationName { 
-                                0%{background-position:100% 50%}
-                                50%{background-position:0% 50%}
-                                100%{background-position:100% 50%}
-                            }
                         }
                     }
                 }
