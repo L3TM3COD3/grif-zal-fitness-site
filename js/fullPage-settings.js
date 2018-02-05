@@ -34,7 +34,7 @@ $('#moveToGallery--paginator').click(function(e){
 
 $('#moveToMap--paginator').click(function(e){
     e.preventDefault();
-    $.fn.fullpage.moveTo(3, 0);
+    $.fn.fullpage.moveTo(4, 0);
 });
 
 $('#moveToAdv--subHeader').click(function(e){
