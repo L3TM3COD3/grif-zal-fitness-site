@@ -92,7 +92,6 @@ a {
   width: 100%;
   background: white;
   min-height: 650px;
-  overflow: hidden;
   position: relative;
   top: 0%;
   left: 0;
@@ -100,10 +99,6 @@ a {
 
 .section-container {
   height: 20%; }
-
-#map {
-  width: 100%;
-  height: 90%; }
 
 .header {
   height: 15%;
@@ -136,7 +131,7 @@ a {
     .header__main__logo {
       width: 10%; }
     .header__main__menu {
-      width: 30%; }
+      width: 50%; }
       .header__main__menu__list {
         text-transform: uppercase;
         font-size: 24px;
@@ -201,7 +196,7 @@ a {
       .header__main__contacts__shedule {
         position: relative; }
         .header__main__contacts__shedule:hover .header__main__contacts__shedule__dropdown {
-          right: -5%;
+          top: 105%;
           opacity: 1; }
         .header__main__contacts__shedule__title {
           font-style: normal;
@@ -218,17 +213,17 @@ a {
           font-size: 16px;
           border: 1px solid black;
           position: absolute;
-          top: 105%;
-          right: -1000%;
+          top: -1100%;
+          right: 0%;
           background: white;
           color: black;
           width: 115%;
           height: 750%;
           opacity: 0;
           font-style: normal;
-          -webkit-transition: right .3s, opacity 1.5s;
-          -o-transition: right .3s, opacity 1.5s;
-          transition: right .3s, opacity 1.5s;
+          -webkit-transition: top .3s, opacity 1.5s;
+          -o-transition: top .3s, opacity 1.5s;
+          transition: top .3s, opacity 1.5s;
           border-radius: 2px;
           -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.7);
           -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.7);
@@ -286,6 +281,23 @@ a {
       justify-content: space-around;
       min-width: 40%;
       font-family: pobedabold; }
+      .header__sub__list--price {
+        text-transform: uppercase;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        min-width: 18%;
+        font-family: pobedabold; }
+        .header__sub__list--price::before {
+          height: 10%;
+          content: '';
+          background-image: url("../../img/icons/triangle.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 20px;
+          height: 20px; }
       .header__sub__list::before {
         height: 10%;
         content: '';
@@ -1285,3 +1297,674 @@ a {
               color: #333333; }
             .map__container__txt__form__row .input__row__tel[placeholder] {
               padding-left: 10px; }
+
+.ticket {
+  background-image: url("../../img/bg/price-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0px 9px 60px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 60px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 9px 60px -1px rgba(0, 0, 0, 0.75);
+  z-index: 2; }
+  .ticket__container {
+    border: 1px solid red;
+    width: 100%;
+    height: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .ticket__container .ticket__btns {
+      width: 90%;
+      height: 80%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .ticket__container .ticket__btns__col {
+        color: white;
+        height: 100%;
+        width: 48%; }
+        .ticket__container .ticket__btns__col--first {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column; }
+          .ticket__container .ticket__btns__col--first .ticket__offer {
+            width: 100%;
+            height: 35%;
+            border: 15px solid white;
+            text-transform: uppercase;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            padding-left: 10%;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column; }
+            .ticket__container .ticket__btns__col--first .ticket__offer__title {
+              font-size: 54px; }
+              .ticket__container .ticket__btns__col--first .ticket__offer__title__name {
+                font-style: italic;
+                color: #fea500; }
+            .ticket__container .ticket__btns__col--first .ticket__offer__content {
+              font-size: 26px; }
+              .ticket__container .ticket__btns__col--first .ticket__offer__content__add {
+                font-size: 22px; }
+              .ticket__container .ticket__btns__col--first .ticket__offer__content .desc-marker {
+                color: #fea500; }
+              .ticket__container .ticket__btns__col--first .ticket__offer__content .add-link {
+                color: #fea500;
+                text-decoration: underline; }
+                .ticket__container .ticket__btns__col--first .ticket__offer__content .add-link:hover {
+                  text-decoration: none; }
+          .ticket__container .ticket__btns__col--first .ticket__athlete__btn {
+            width: 100%;
+            height: 60%;
+            position: relative;
+            overflow: hidden;
+            -webkit-box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+            -webkit-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s; }
+            .ticket__container .ticket__btns__col--first .ticket__athlete__btn:hover {
+              -webkit-transform: translateX(-20px);
+              -ms-transform: translateX(-20px);
+              transform: translateX(-20px);
+              -webkit-box-shadow: 0px 0px 0px 0px transparent;
+              -moz-box-shadow: 0px 0px 0px 0px transparent;
+              box-shadow: 0px 0px 0px 0px transparent; }
+            .ticket__container .ticket__btns__col--first .ticket__athlete__btn:hover .ticket__athlete__btn__overlay {
+              left: -100%; }
+            .ticket__container .ticket__btns__col--first .ticket__athlete__btn__overlay {
+              background: url("../../img/content/price-btn-bg.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              position: absolute;
+              left: 0%;
+              -webkit-transition: 1s;
+              -o-transition: 1s;
+              transition: 1s;
+              width: 100%;
+              height: 100%;
+              padding: 5%;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+              justify-content: space-between;
+              color: #333333;
+              z-index: 6; }
+              .ticket__container .ticket__btns__col--first .ticket__athlete__btn__overlay__title {
+                text-transform: uppercase;
+                color: white;
+                font-size: 64px;
+                height: 50%; }
+                .ticket__container .ticket__btns__col--first .ticket__athlete__btn__overlay__title .athlete-marker {
+                  background: #333333;
+                  padding-left: 2%;
+                  padding-right: 2%; }
+              .ticket__container .ticket__btns__col--first .ticket__athlete__btn__overlay__view {
+                text-transform: uppercase;
+                font-size: 36px;
+                text-decoration: underline; }
+            .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content {
+              border: 2px solid white;
+              width: 100%;
+              height: 100%;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; }
+              .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col {
+                height: 100%;
+                width: 34%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column; }
+                .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item {
+                  padding: 6%;
+                  background: #333333;
+                  height: 50%;
+                  width: 100%;
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: vertical;
+                  -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                  flex-direction: column;
+                  -ms-flex-pack: distribute;
+                  justify-content: space-around;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  text-align: center;
+                  -webkit-transition: .3s;
+                  -o-transition: .3s;
+                  transition: .3s;
+                  border: 2px solid transparent; }
+                  .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item--spec {
+                    padding: 6%;
+                    background: #fea500;
+                    height: 100%;
+                    width: 100%;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    -ms-flex-pack: distribute;
+                    justify-content: space-around;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    text-align: center;
+                    -webkit-transition: .3s;
+                    -o-transition: .3s;
+                    transition: .3s;
+                    border: 2px solid transparent; }
+                    .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item--spec__title {
+                      font-size: 24px;
+                      color: #333333;
+                      text-transform: uppercase; }
+                      .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item--spec__title .month-marker {
+                        color: white; }
+                    .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item--spec__price {
+                      font-size: 36px;
+                      color: #333333;
+                      text-transform: uppercase; }
+                    .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item--spec__link {
+                      font-size: 24px;
+                      background: #333333;
+                      color: white;
+                      width: 55%;
+                      height: 10%;
+                      text-transform: uppercase;
+                      display: -webkit-box;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      justify-content: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      -webkit-transition: .3s;
+                      -o-transition: .3s;
+                      transition: .3s; }
+                      .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item--spec__link:hover {
+                        background: white;
+                        color: #333333; }
+                    .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item--spec:hover {
+                      -webkit-box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+                      -moz-box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+                      box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+                      z-index: 5;
+                      border: 2px solid white; }
+                  .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item:hover {
+                    -webkit-box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+                    -moz-box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+                    box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+                    z-index: 5;
+                    border: 2px solid #fea500; }
+                  .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item__title {
+                    font-size: 20px;
+                    color: white;
+                    text-transform: uppercase; }
+                    .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item__title .month-marker {
+                      color: #fea500; }
+                  .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item__price {
+                    font-size: 25px;
+                    color: #fea500;
+                    text-transform: uppercase; }
+                  .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item__link {
+                    font-size: 18px;
+                    background: white;
+                    width: 40%;
+                    height: 17%;
+                    color: #333333;
+                    text-transform: uppercase;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-transition: .3s;
+                    -o-transition: .3s;
+                    transition: .3s; }
+                    .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item__link:hover {
+                      background: #fea500;
+                      color: #333333; }
+        .ticket__container .ticket__btns__col--second {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column; }
+          .ticket__container .ticket__btns__col--second .ticket__offer {
+            width: 100%;
+            height: 35%;
+            border: 15px solid white; }
+          .ticket__container .ticket__btns__col--second .ticket__athlete__btn {
+            width: 100%;
+            height: 60%;
+            position: relative;
+            overflow: hidden;
+            -webkit-box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+            -webkit-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s; }
+            .ticket__container .ticket__btns__col--second .ticket__athlete__btn:hover {
+              -webkit-transform: translateX(20px);
+              -ms-transform: translateX(20px);
+              transform: translateX(20px);
+              -webkit-box-shadow: 0px 0px 0px 0px transparent;
+              -moz-box-shadow: 0px 0px 0px 0px transparent;
+              box-shadow: 0px 0px 0px 0px transparent; }
+            .ticket__container .ticket__btns__col--second .ticket__athlete__btn:hover .ticket__athlete__btn__overlay {
+              right: -100%; }
+            .ticket__container .ticket__btns__col--second .ticket__athlete__btn__overlay {
+              background: url("../../img/content/price-btn-bg-2.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              position: absolute;
+              right: 0%;
+              -webkit-transition: 1s;
+              -o-transition: 1s;
+              transition: 1s;
+              width: 100%;
+              height: 100%;
+              padding: 5%;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+              justify-content: space-between;
+              color: #333333;
+              z-index: 6;
+              text-align: right; }
+              .ticket__container .ticket__btns__col--second .ticket__athlete__btn__overlay__title {
+                text-transform: uppercase;
+                color: white;
+                font-size: 64px;
+                height: 50%; }
+                .ticket__container .ticket__btns__col--second .ticket__athlete__btn__overlay__title .athlete-marker {
+                  background: #333333;
+                  padding-left: 2%;
+                  padding-right: 2%; }
+              .ticket__container .ticket__btns__col--second .ticket__athlete__btn__overlay__view {
+                text-transform: uppercase;
+                font-size: 36px;
+                text-decoration: underline; }
+            .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content {
+              border: 2px solid white;
+              width: 100%;
+              height: 100%;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: reverse;
+              -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse; }
+              .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col {
+                height: 100%;
+                width: 34%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column; }
+                .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col__item {
+                  padding: 6%;
+                  background: white;
+                  height: 50%;
+                  width: 100%;
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: vertical;
+                  -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                  flex-direction: column;
+                  -ms-flex-pack: distribute;
+                  justify-content: space-around;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  text-align: center;
+                  -webkit-transition: .3s;
+                  -o-transition: .3s;
+                  transition: .3s;
+                  border: 2px solid transparent; }
+                  .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col__item--spec {
+                    padding: 6%;
+                    background: #0060ff;
+                    height: 100%;
+                    width: 100%;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    -ms-flex-pack: distribute;
+                    justify-content: space-around;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    text-align: center;
+                    -webkit-transition: .3s;
+                    -o-transition: .3s;
+                    transition: .3s;
+                    border: 2px solid transparent; }
+                    .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col__item--spec__title {
+                      font-size: 24px;
+                      color: white;
+                      text-transform: uppercase; }
+                      .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col__item--spec__title .month-marker {
+                        color: #333333; }
+                    .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col__item--spec__price {
+                      font-size: 36px;
+                      color: white;
+                      text-transform: uppercase; }
+                    .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col__item--spec__link {
+                      font-size: 24px;
+                      background: white;
+                      color: #333333;
+                      width: 55%;
+                      height: 10%;
+                      text-transform: uppercase;
+                      display: -webkit-box;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      justify-content: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      -webkit-transition: .3s;
+                      -o-transition: .3s;
+                      transition: .3s; }
+                      .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col__item--spec__link:hover {
+                        background: #333333;
+                        color: white; }
+                    .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col__item--spec:hover {
+                      -webkit-box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+                      -moz-box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+                      box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+                      z-index: 5;
+                      border: 2px solid #333333; }
+                  .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col__item:hover {
+                    -webkit-box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+                    -moz-box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+                    box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+                    z-index: 5;
+                    border: 2px solid #0060ff; }
+                  .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col__item__title {
+                    font-size: 20px;
+                    color: #333333;
+                    text-transform: uppercase; }
+                    .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col__item__title .month-marker {
+                      color: #0060ff; }
+                  .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col__item__price {
+                    font-size: 25px;
+                    color: #0060ff;
+                    text-transform: uppercase; }
+                  .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col__item__link {
+                    font-size: 18px;
+                    background: #333333;
+                    width: 40%;
+                    height: 17%;
+                    color: white;
+                    text-transform: uppercase;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-transition: .3s;
+                    -o-transition: .3s;
+                    transition: .3s; }
+                    .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col__item__link:hover {
+                      background: #0060ff;
+                      color: white; }
+        .ticket__container .ticket__btns__col__row {
+          height: 35%; }
+          .ticket__container .ticket__btns__col__row__col-list {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+            .ticket__container .ticket__btns__col__row__col-list__col {
+              width: 50%;
+              height: 100%;
+              position: relative;
+              -webkit-box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+              -moz-box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+              box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+              -webkit-transition: .3s;
+              -o-transition: .3s;
+              transition: .3s;
+              overflow: hidden;
+              background: #333333; }
+              .ticket__container .ticket__btns__col__row__col-list__col:hover {
+                -webkit-transform: translateY(15px);
+                -ms-transform: translateY(15px);
+                transform: translateY(15px);
+                -webkit-box-shadow: 0px 0px 0px 0px transparent;
+                -moz-box-shadow: 0px 0px 0px 0px transparent;
+                box-shadow: 0px 0px 0px 0px transparent; }
+              .ticket__container .ticket__btns__col__row__col-list__col:hover .ticket__btns__col__row__col-list__col__overlay {
+                bottom: -100%; }
+              .ticket__container .ticket__btns__col__row__col-list__col__overlay {
+                background: url("../../img/content/price-btn-bg-3.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                bottom: 0%;
+                -webkit-transition: 1s;
+                -o-transition: 1s;
+                transition: 1s;
+                width: 100%;
+                height: 100%;
+                padding: 5%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                color: #333333;
+                z-index: 6;
+                text-align: left; }
+                .ticket__container .ticket__btns__col__row__col-list__col__overlay__title {
+                  text-transform: uppercase;
+                  color: white;
+                  font-size: 32px;
+                  height: 50%; }
+                  .ticket__container .ticket__btns__col__row__col-list__col__overlay__title .athlete-marker {
+                    background: #333333;
+                    padding-left: 2%;
+                    padding-right: 2%; }
+                .ticket__container .ticket__btns__col__row__col-list__col__overlay__view {
+                  text-transform: uppercase;
+                  font-size: 26px;
+                  text-decoration: underline; }
+              .ticket__container .ticket__btns__col__row__col-list__col__content {
+                width: 100%;
+                height: 100%;
+                border: 1px solid white;
+                padding: 5%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-pack: distribute;
+                justify-content: space-around;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                font-size: 18px; }
+                .ticket__container .ticket__btns__col__row__col-list__col__content__title {
+                  font-size: 18px;
+                  color: white;
+                  text-transform: uppercase; }
+                  .ticket__container .ticket__btns__col__row__col-list__col__content__title .month-marker {
+                    color: #fea500; }
+                .ticket__container .ticket__btns__col__row__col-list__col__content__price {
+                  font-size: 18px;
+                  color: white;
+                  text-transform: uppercase; }
+                  .ticket__container .ticket__btns__col__row__col-list__col__content__price .month-marker {
+                    color: #fea500; }
+                .ticket__container .ticket__btns__col__row__col-list__col__content__link {
+                  font-size: 18px;
+                  background: white;
+                  color: #333333;
+                  width: 25%;
+                  height: 15%;
+                  text-transform: uppercase;
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-transition: .3s;
+                  -o-transition: .3s;
+                  transition: .3s; }
+                  .ticket__container .ticket__btns__col__row__col-list__col__content__link:hover {
+                    background: #fea500;
+                    color: #333333; }
+              .ticket__container .ticket__btns__col__row__col-list__col--second {
+                padding: 5%;
+                font-size: 24px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                width: 25%;
+                height: 100%;
+                -webkit-transition: .3s;
+                -o-transition: .3s;
+                transition: .3s;
+                text-transform: uppercase;
+                background: white;
+                z-index: 2; }
+                .ticket__container .ticket__btns__col__row__col-list__col--second-link {
+                  color: #333333; }
+                .ticket__container .ticket__btns__col__row__col-list__col--second:hover {
+                  border: 2px solid #fea500;
+                  -webkit-transform: translateX(15px);
+                  -ms-transform: translateX(15px);
+                  transform: translateX(15px);
+                  -webkit-box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+                  -moz-box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+                  box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+                  z-index: 3; }
+              .ticket__container .ticket__btns__col__row__col-list__col--three {
+                padding: 5%;
+                font-size: 24px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                width: 25%;
+                height: 100%;
+                -webkit-transition: .3s;
+                -o-transition: .3s;
+                transition: .3s;
+                text-transform: uppercase;
+                background: white;
+                z-index: 2; }
+                .ticket__container .ticket__btns__col__row__col-list__col--three-link {
+                  color: #333333; }
+                .ticket__container .ticket__btns__col__row__col-list__col--three:hover {
+                  border: 2px solid #0060ff;
+                  -webkit-transform: translateX(-15px);
+                  -ms-transform: translateX(-15px);
+                  transform: translateX(-15px);
+                  -webkit-box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+                  -moz-box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+                  box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
+                  z-index: 3; }

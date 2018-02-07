@@ -23,7 +23,7 @@
         }
 
         &__menu {
-            width: 30%;
+            width: 50%;
             
             &__list {
                 text-transform: uppercase;
@@ -88,7 +88,7 @@
                 position: relative;
 
                 &:hover .header__main__contacts__shedule__dropdown {
-                    right: -5%;
+                    top: 105%;
                     opacity: 1;
                 }
 
@@ -109,15 +109,15 @@
                     font-size: 16px;
                     border: 1px solid black;
                     position: absolute;
-                    top: 105%;
-                    right: -1000%;
+                    top: -1100%;
+                    right: 0%;
                     background: white;
                     color: black;
                     width: 115%;
                     height: 750%;
                     opacity: 0;
                     font-style: normal;
-                    transition: right .3s, opacity 1.5s;
+                    transition: top .3s, opacity 1.5s;
                     border-radius: 2px;
                     -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.7);
                     -moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.7);
@@ -164,6 +164,24 @@
             justify-content: space-around;
             min-width: 40%;
             font-family: pobedabold;
+
+            &--price {
+                text-transform: uppercase;
+                display: flex;
+                justify-content: space-around;
+                min-width: 18%;
+                font-family: pobedabold;
+
+                &::before {
+                    height: 10%;
+                    content: '';
+                    background-image: url('../../img/icons/triangle.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
 
             &::before {
                 height: 10%;
