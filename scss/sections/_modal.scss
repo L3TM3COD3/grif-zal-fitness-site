@@ -1,0 +1,224 @@
+#modal_form {
+	width: 25%; 
+	height: 35%; 
+	background: $low-orange;
+	position: fixed; 
+	top: 45%;
+	left: 50%; 
+	margin-top: -10%;
+	margin-left: -10%; 
+	display: none; 
+	opacity: 0; 
+	z-index: 500; 
+    padding: 1%;
+
+    &--doc {
+        width: 35%;
+        height: 75%;  
+        background: white;
+        position: fixed; 
+        border: 2px solid $low-blue;
+        top: 45%;
+        left: 50%; 
+        margin-top: -20%;
+        margin-left: -15%; 
+        display: none; 
+        opacity: 0; 
+        z-index: 500; 
+        padding: 2%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+}
+
+#modal_form #modal_close {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 4px;
+	cursor: pointer;
+    display: block;
+    z-index: 550;
+    transition: .2s;
+
+    &:hover {
+        color: white;
+    }
+}
+
+#modal_form--doc #modal_close--doc {
+    width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 4px;
+	cursor: pointer;
+    display: block;
+    z-index: 550;
+    transition: .2s;
+
+    &:hover {
+        color: $low-blue;
+    }
+}
+
+#overlay {
+	z-index: 450; 
+	position:fixed; 
+	background-color:#000; 
+	opacity:0.8; 
+	-moz-opacity:0.8; 
+	filter:alpha(opacity=80);
+	width:100%; 
+	height:100%; 
+	top:0; 
+	left:0;
+	cursor:pointer;
+    display:none; 
+    
+    &--doc {
+        z-index: 450; 
+        position:fixed; 
+        background-color:#000; 
+        opacity:0.8; 
+        -moz-opacity:0.8; 
+        filter:alpha(opacity=80);
+        width:100%; 
+        height:100%; 
+        top:0; 
+        left:0;
+        cursor:pointer;
+        display:none;
+    }
+}
+
+.modal__form__lay {
+    background: $low-orange;
+    width: 100%;
+    height: 100%;
+}
+    
+.modal__form {
+    background: $low-orange;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    &__title {
+        text-align: center;
+        font-size: rem(32px);
+        letter-spacing: 5px;
+        color: white;
+        text-transform: uppercase;
+    }
+    
+    &__name {
+        height: 15%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__name__row__input {
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid white;
+        transition: .3s;
+        color: white;
+        border-radius: 2px;
+        background: $low-orange;
+        font-family: pobedabold;
+        font-size: 24px;
+
+        @include placeholder {
+            color: white;
+        }
+
+        &:focus {
+            color: white;
+
+            @include placeholder  {
+                color: transparent;
+            }
+        }
+    }
+
+    &__tel {
+        height: 15%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__tel__row__input {
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid white;
+        transition: .3s;
+        color: white;
+        border-radius: 2px;
+        background: $low-orange;
+        font-family: pobedabold;
+        font-size: 24px;
+
+        @include placeholder {
+            color: white;
+        }
+
+        &:focus {
+            color: white;
+
+            @include placeholder  {
+                color: transparent;
+            }
+        }
+    }
+}
+
+.modal__form__submit {
+    width: 40%;
+    height: 12%;
+    background-color: white;
+    color: $black;
+    cursor: pointer;
+    transition: .3s;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-family: cervo;
+    font-size: 20px;
+    letter-spacing: 3px;
+
+    &:hover {
+        background: $black;
+        color: white;
+    }
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__title {
+        font-size: rem(20px);
+        color: $black;
+        text-transform: uppercase;
+        margin-bottom: 5%;
+    }
+
+    &__list {
+        font-size: 18px;
+        list-style: inside square; 
+    }
+}

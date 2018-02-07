@@ -2,6 +2,12 @@
     height: 15%;
     width: 100%;
 
+    &--price {
+        height: 10%;
+        width: 100%;
+        border-bottom: 1px solid $low-orange;
+    }
+
     &__container {
         display: flex;
         justify-content: space-between;
@@ -17,6 +23,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &--price {
+            border: 1px solid black;
+            height: 100%;
+            background: $black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
         &__logo {
             width: 10%;
@@ -104,6 +120,7 @@
                 }
 
                 &__dropdown {
+                    z-index: 15;
                     padding: 10%;
                     font-family: cervo;
                     font-size: 16px;

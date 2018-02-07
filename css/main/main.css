@@ -92,6 +92,7 @@ a {
   width: 100%;
   background: white;
   min-height: 650px;
+  overflow: hidden;
   position: relative;
   top: 0%;
   left: 0;
@@ -103,6 +104,10 @@ a {
 .header {
   height: 15%;
   width: 100%; }
+  .header--price {
+    height: 10%;
+    width: 100%;
+    border-bottom: 1px solid #fea500; }
   .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -128,6 +133,20 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+    .header__main--price {
+      border: 1px solid black;
+      height: 100%;
+      background: #333333;
+      color: white;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
     .header__main__logo {
       width: 10%; }
     .header__main__menu {
@@ -208,6 +227,7 @@ a {
           .header__main__contacts__shedule__title:hover {
             color: white; }
         .header__main__contacts__shedule__dropdown {
+          z-index: 15;
           padding: 10%;
           font-family: cervo;
           font-size: 16px;
@@ -481,6 +501,10 @@ a {
             background-image: linear-gradient(190deg, #ff6600, #fea500);
             color: white; }
 
+.section-footer {
+  height: 25%;
+  width: 100%; }
+
 .footer {
   width: 100%;
   height: 25%;
@@ -494,6 +518,10 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .footer--sect {
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid #fea500; }
   .footer__container {
     height: 80%;
     width: 97%;
@@ -1302,14 +1330,10 @@ a {
   background-image: url("../../img/bg/price-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-box-shadow: 0px 9px 60px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 9px 60px -1px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 9px 60px -1px rgba(0, 0, 0, 0.75);
   z-index: 2; }
   .ticket__container {
-    border: 1px solid red;
     width: 100%;
-    height: 85%;
+    height: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1968,3 +1992,241 @@ a {
                   -moz-box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
                   box-shadow: 0px 14px 35px 3px rgba(0, 0, 0, 0.75);
                   z-index: 3; }
+
+#modal_form {
+  width: 25%;
+  height: 35%;
+  background: #fea500;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-top: -10%;
+  margin-left: -10%;
+  display: none;
+  opacity: 0;
+  z-index: 500;
+  padding: 1%; }
+  #modal_form--doc {
+    width: 35%;
+    height: 75%;
+    background: white;
+    position: fixed;
+    border: 2px solid #0060ff;
+    top: 45%;
+    left: 50%;
+    margin-top: -20%;
+    margin-left: -15%;
+    display: none;
+    opacity: 0;
+    z-index: 500;
+    padding: 2%;
+    overflow-y: scroll;
+    overflow-x: hidden; }
+
+#modal_form #modal_close {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 10px;
+  right: 4px;
+  cursor: pointer;
+  display: block;
+  z-index: 550;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+  #modal_form #modal_close:hover {
+    color: white; }
+
+#modal_form--doc #modal_close--doc {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 10px;
+  right: 4px;
+  cursor: pointer;
+  display: block;
+  z-index: 550;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+  #modal_form--doc #modal_close--doc:hover {
+    color: #0060ff; }
+
+#overlay {
+  z-index: 450;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=80);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none; }
+  #overlay--doc {
+    z-index: 450;
+    position: fixed;
+    background-color: #000;
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    filter: alpha(opacity=80);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none; }
+
+.modal__form__lay {
+  background: #fea500;
+  width: 100%;
+  height: 100%; }
+
+.modal__form {
+  background: #fea500;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .modal__form__title {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    color: white;
+    text-transform: uppercase; }
+  .modal__form__name {
+    height: 15%;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .modal__form__name__row__input {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    color: white;
+    border-radius: 2px;
+    background: #fea500;
+    font-family: pobedabold;
+    font-size: 24px; }
+    .modal__form__name__row__input::-webkit-input-placeholder {
+      color: white; }
+    .modal__form__name__row__input:-moz-placeholder {
+      color: white; }
+    .modal__form__name__row__input::-moz-placeholder {
+      color: white; }
+    .modal__form__name__row__input:-ms-input-placeholder {
+      color: white; }
+    .modal__form__name__row__input:focus {
+      color: white; }
+      .modal__form__name__row__input:focus::-webkit-input-placeholder {
+        color: transparent; }
+      .modal__form__name__row__input:focus:-moz-placeholder {
+        color: transparent; }
+      .modal__form__name__row__input:focus::-moz-placeholder {
+        color: transparent; }
+      .modal__form__name__row__input:focus:-ms-input-placeholder {
+        color: transparent; }
+  .modal__form__tel {
+    height: 15%;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .modal__form__tel__row__input {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    color: white;
+    border-radius: 2px;
+    background: #fea500;
+    font-family: pobedabold;
+    font-size: 24px; }
+    .modal__form__tel__row__input::-webkit-input-placeholder {
+      color: white; }
+    .modal__form__tel__row__input:-moz-placeholder {
+      color: white; }
+    .modal__form__tel__row__input::-moz-placeholder {
+      color: white; }
+    .modal__form__tel__row__input:-ms-input-placeholder {
+      color: white; }
+    .modal__form__tel__row__input:focus {
+      color: white; }
+      .modal__form__tel__row__input:focus::-webkit-input-placeholder {
+        color: transparent; }
+      .modal__form__tel__row__input:focus:-moz-placeholder {
+        color: transparent; }
+      .modal__form__tel__row__input:focus::-moz-placeholder {
+        color: transparent; }
+      .modal__form__tel__row__input:focus:-ms-input-placeholder {
+        color: transparent; }
+
+.modal__form__submit {
+  width: 40%;
+  height: 12%;
+  background-color: white;
+  color: #333333;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-family: cervo;
+  font-size: 20px;
+  letter-spacing: 3px; }
+  .modal__form__submit:hover {
+    background: #333333;
+    color: white; }
+
+.modal__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .modal__content__title {
+    font-size: 1.25rem;
+    color: #333333;
+    text-transform: uppercase;
+    margin-bottom: 5%; }
+  .modal__content__list {
+    font-size: 18px;
+    list-style: inside square; }
