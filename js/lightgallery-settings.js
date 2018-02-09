@@ -21,3 +21,11 @@ $('#haircut').lightGallery({
 $('#other').lightGallery({
     selector: '.photo-container'
 });
+
+$('#sauna-page').lightGallery({
+    selector: '.photo-container'
+});
+
+$('#banya-page').lightGallery({
+    selector: '.photo-container'
+});
