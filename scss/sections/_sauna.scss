@@ -1,0 +1,21 @@
+.sauna {
+    background: url('../../img/bg/shedule-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 90%;
+    }
+
+    &__content {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
