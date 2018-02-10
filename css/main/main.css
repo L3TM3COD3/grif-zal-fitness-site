@@ -2751,13 +2751,11 @@ table.blueTable tfoot td {
     align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
-    border: 1px solid yellow; }
+    justify-content: space-between; }
     .sauna__content__col {
       width: 50%;
       height: 100%; }
       .sauna__content__col--1 {
-        border: 3px dashed red;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2768,8 +2766,9 @@ table.blueTable tfoot td {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between; }
+      .sauna__content__col--2 {
+        border: 1px solid red; }
     .sauna__content__txt {
-      border: 1px solid yellow;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -2791,17 +2790,14 @@ table.blueTable tfoot td {
         font-size: 24px;
         color: white; }
     .sauna__content__sauna {
-      border: 1px solid white;
       width: 100%;
       height: 70%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
       .sauna__content__sauna .sauna__txt {
-        border: 1px solid red;
         height: 100%;
         width: 50%;
-        background: white;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2812,10 +2808,10 @@ table.blueTable tfoot td {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        padding: 3%; }
+        background: white; }
         .sauna__content__sauna .sauna__txt__row {
-          border: 1px solid red;
           height: 50%;
+          width: 100%;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -2825,14 +2821,81 @@ table.blueTable tfoot td {
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
           -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+          color: #333333;
+          padding: 5%; }
         .sauna__content__sauna .sauna__txt__title {
           font-size: 42px;
           letter-spacing: 5px;
           text-transform: uppercase; }
         .sauna__content__sauna .sauna__txt__desc {
           font-size: 24px; }
+        .sauna__content__sauna .sauna__txt__price {
+          font-size: 24px;
+          text-transform: uppercase;
+          color: #fea500; }
+        .sauna__content__sauna .sauna__txt__contacts {
+          color: white;
+          background: #333333;
+          font-size: 24px;
+          text-transform: uppercase;
+          width: 100%;
+          padding: 5%; }
       .sauna__content__sauna .sauna__gallery {
-        border: 2px solid green;
         height: 100%;
-        width: 50%; }
+        width: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+        flex-flow: wrap row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-line-pack: justify;
+        align-content: space-between;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer; }
+        .sauna__content__sauna .sauna__gallery:hover .sauna__gallery__overlay {
+          top: -550px; }
+        .sauna__content__sauna .sauna__gallery:hover .sauna__gallery__overlay__title {
+          opacity: 0; }
+        .sauna__content__sauna .sauna__gallery:hover .sauna__gallery__overlay__title {
+          opacity: 1; }
+        .sauna__content__sauna .sauna__gallery:hover {
+          border-top: 5px solid #fea500; }
+        .sauna__content__sauna .sauna__gallery .photo-container {
+          height: 25%;
+          width: 33.3%;
+          overflow: hidden;
+          border: 1px solid white; }
+          .sauna__content__sauna .sauna__gallery .photo-container .sauna__gallery__photo {
+            width: 100%;
+            height: 100%; }
+        .sauna__content__sauna .sauna__gallery__overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0px;
+          background: rgba(0, 0, 0, 0.6);
+          -webkit-transition: .5s;
+          -o-transition: .5s;
+          transition: .5s;
+          color: #fea500;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          border-top: 5px solid transparent;
+          border-bottom: 5px solid #fea500; }
+          .sauna__content__sauna .sauna__gallery__overlay__title {
+            font-size: 36px;
+            letter-spacing: 5px; }
