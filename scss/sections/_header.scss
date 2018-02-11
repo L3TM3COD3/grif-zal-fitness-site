@@ -5,7 +5,7 @@
     &--price {
         height: 10%;
         width: 100%;
-        border-bottom: 1px solid $low-orange;
+        border-bottom: rem(1px) solid $low-orange;
     }
 
     &__container {
@@ -16,7 +16,7 @@
     }
 
     &__main {
-        border: 1px solid black;
+        border: rem(1px) solid black;
         height: 70%;
         background: $black;
         color: white;
@@ -24,8 +24,12 @@
         justify-content: center;
         align-items: center;
 
+        @include normal {
+            height: 65%;   
+        }
+
         &--price {
-            border: 1px solid black;
+            border: rem(1px) solid black;
             height: 100%;
             background: $black;
             color: white;
@@ -43,7 +47,7 @@
             
             &__list {
                 text-transform: uppercase;
-                font-size: 24px;
+                font-size: rem(24px);
                 width: 100%;
                 display: flex;
                 justify-content: space-around;
@@ -60,11 +64,11 @@
                 &__item__link {
                     color: white;
                     transition: .3s;
-                    border-radius: 0px;
-                    padding: 2px;
+                    border-radius: rem(0px);
+                    padding: rem(2px);
                     transition: .3s;
-                    padding-left: 6px;
-                    padding-right: 6px;
+                    padding-left: rem(6px);
+                    padding-right: rem(6px);
                     
                     &:hover {
                         color: $black;
@@ -74,8 +78,8 @@
                     &--active {
                         color: $black;
                         background: white;
-                        padding-left: 6px;
-                        padding-right: 6px;
+                        padding-left: rem(6px);
+                        padding-right: rem(6px);
                     }
                 }
             }
@@ -84,12 +88,12 @@
         &__contacts {
             min-width: 10%;
             font-family: pobedabold;
-            font-size: 18px;
+            font-size: rem(18px);
             height: 70%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            letter-spacing: 2px;
+            letter-spacing: rem(2px);
 
             &__phone__link {
                 float: right;
@@ -123,8 +127,8 @@
                     z-index: 15;
                     padding: 10%;
                     font-family: cervo;
-                    font-size: 16px;
-                    border: 1px solid black;
+                    font-size: rem(16px);
+                    border: rem(1px) solid black;
                     position: absolute;
                     top: -1100%;
                     right: 0%;
@@ -135,10 +139,10 @@
                     opacity: 0;
                     font-style: normal;
                     transition: opacity .5s;
-                    border-radius: 2px;
-                    -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.7);
-                    -moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.7);
-                    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.7);
+                    border-radius: rem(2px);
+                    -webkit-box-shadow: rem(0px) rem(0px) rem(20px) rem(1px) rgba(0,0,0,0.7);
+                    -moz-box-shadow: rem(0px) rem(0px) rem(20px) rem(1px) rgba(0,0,0,0.7);
+                    box-shadow: rem(0px) rem(0px) rem(20px) rem(1px) rgba(0,0,0,0.7);
 
                     &__content {
                         min-height: 100%;
@@ -174,51 +178,50 @@
         justify-content: center;
         align-items: center;
         background: linear-gradient(270deg, $high-orange, $low-orange 60%);
+
+        @include normal {
+            height: 35%;   
+        }
         
         &__list {
             text-transform: uppercase;
             display: flex;
             justify-content: space-around;
+            align-items: center;
             min-width: 40%;
+            height: 100%;
             font-family: pobedabold;
 
-            &--price {
-                text-transform: uppercase;
-                display: flex;
-                justify-content: space-around;
-                min-width: 18%;
-                font-family: pobedabold;
-
-                &::before {
-                    height: 10%;
-                    content: '';
-                    background-image: url('../../img/icons/triangle.png');
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    width: 20px;
-                    height: 20px;
-                }
-            }
-
             &::before {
-                height: 10%;
                 content: '';
                 background-image: url('../../img/icons/triangle.png');
                 background-repeat: no-repeat;
                 background-position: center;
-                width: 20px;
-                height: 20px;
+                background-size: contain;
+                width: rem(20px);
+                height: rem(20px);
             }
 
             &__item {
-                font-size: 18px;
-                letter-spacing: 2px;
+                font-size: rem(18px);
+                letter-spacing: rem(2px);
                 transition: .3s;
-                border-bottom: 1px solid transparent;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-bottom: rem(1px) solid transparent;
+
+                
             }
 
             &__item:hover {
-                border-bottom: 1px solid white;
+                border-bottom: rem(1px) solid white;
+                
+                @include normal {
+                    border-bottom: none;
+                    text-decoration: underline;   
+                }
             }
         }
     }

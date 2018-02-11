@@ -12,18 +12,17 @@
 	z-index: 500; 
     padding: 1%;
 
-    &--doc {
+    &--doc,  &--benefit {
         width: 35%;
         height: 75%;  
         background: white;
         position: fixed; 
-        border: 2px solid $low-blue;
+        border: rem(2px) solid $low-blue;
         top: 45%;
         left: 50%; 
         margin-top: -20%;
         margin-left: -15%; 
-        display: none; 
-        opacity: 0; 
+        display: none;  
         z-index: 500; 
         padding: 2%;
         overflow-y: scroll;
@@ -48,22 +47,36 @@
         padding: 2%;
 
         .modal__content__title {
-            font-size: 42px;
-            letter-spacing: 5px;
+            font-size: rem(42px);
+            letter-spacing: rem(5px);
         }
 
         .modal__content__desc {
-            font-size: 22px;
+            font-size: rem(22px);
         }
+    }
+
+    &--rules {
+        width: 60%;
+        background: white;
+        position: fixed; 
+        top: 50%;
+        left: 50%; 
+        margin-top: -18%;
+        margin-left: -30%; 
+        display: none; 
+        opacity: 0; 
+        z-index: 500; 
+        padding: 2%;
     }
 }
 
 #modal_form #modal_close {
-	width: 21px;
-	height: 21px;
+	width: rem(21px);
+	height: rem(21px);
 	position: absolute;
-	top: 10px;
-	right: 4px;
+	top: rem(10px);
+	right: rem(4px);
 	cursor: pointer;
     display: block;
     z-index: 550;
@@ -75,11 +88,11 @@
 }
 
 #modal_form--doc #modal_close--doc {
-    width: 21px;
-	height: 21px;
+    width: rem(21px);
+	height: rem(21px);
 	position: absolute;
-	top: 10px;
-	right: 4px;
+	top: rem(10px);
+	right: rem(4px);
 	cursor: pointer;
     display: block;
     z-index: 550;
@@ -98,12 +111,14 @@
 #modal_close--fit, 
 #modal_close--iron, 
 #modal_close--press, 
-#modal_close--stretch, {
-    width: 21px;
-	height: 21px;
+#modal_close--stretch,
+#modal_close--rules, 
+#modal_close--benefit {
+    width: rem(21px);
+	height: rem(21px);
 	position: absolute;
-	top: 10px;
-	right: 4px;
+	top: rem(10px);
+	right: rem(4px);
 	cursor: pointer;
     display: block;
     z-index: 550;
@@ -123,7 +138,9 @@
 #overlay--fit, 
 #overlay--iron, 
 #overlay--press, 
-#overlay--stretch, {
+#overlay--stretch,
+#overlay--benefit,
+#overlay--rules {
 	z-index: 450; 
 	position:fixed; 
 	background-color:#000; 
@@ -171,7 +188,7 @@
     &__title {
         text-align: center;
         font-size: rem(32px);
-        letter-spacing: 5px;
+        letter-spacing: rem(5px);
         color: white;
         text-transform: uppercase;
     }
@@ -189,13 +206,13 @@
         width: 100%;
         outline: none;
         border: none;
-        border-bottom: 2px solid white;
+        border-bottom: rem(2px) solid white;
         transition: .3s;
         color: white;
-        border-radius: 2px;
+        border-radius: rem(2px);
         background: $low-orange;
         font-family: pobedabold;
-        font-size: 24px;
+        font-size: rem(24px);
 
         @include placeholder {
             color: white;
@@ -223,13 +240,13 @@
         width: 100%;
         outline: none;
         border: none;
-        border-bottom: 2px solid white;
+        border-bottom: rem(2px) solid white;
         transition: .3s;
         color: white;
-        border-radius: 2px;
+        border-radius: rem(2px);
         background: $low-orange;
         font-family: pobedabold;
-        font-size: 24px;
+        font-size: rem(24px);
 
         @include placeholder {
             color: white;
@@ -256,8 +273,8 @@
     border: none;
     text-transform: uppercase;
     font-family: cervo;
-    font-size: 20px;
-    letter-spacing: 3px;
+    font-size: rem(20px);
+    letter-spacing: rem(3px);
 
     &:hover {
         background: $black;
@@ -270,15 +287,52 @@
     flex-direction: column;
     justify-content: space-between;
 
+    &__btn {
+        color: $black;
+        text-transform: uppercase;
+        margin-top: 3%;
+        font-size: 21px;
+        background: $low-orange;
+        height: 100%;
+        padding: 1%;
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+
+        &:hover {
+            color: white;
+            background: $black;
+        }
+    }
+
+    &__desc--benefit {
+        font-size: rem(20px);
+        margin-bottom: 2%;
+    }
+
     &__title {
         font-size: rem(20px);
         color: $black;
         text-transform: uppercase;
         margin-bottom: 5%;
+
+        &--benefit {
+            font-size: rem(32px);
+            color: $black;
+            text-transform: uppercase;
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
     }
 
     &__list {
-        font-size: 18px;
+        font-size: rem(18px);
         list-style: inside square; 
     }
+}
+
+.etc {
+    font-size: rem(20px);
 }

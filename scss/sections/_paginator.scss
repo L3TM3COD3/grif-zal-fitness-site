@@ -22,14 +22,14 @@
             }
 
             &:hover .paginator__list__item__link__block {
-                transform: translateY(4px);
+                transform: translateY(rem(4px));
                 background: $low-orange;
             }
 
             &__desc {
                 color: $black;
                 background: white;
-                min-width: 100px;
+                min-width: rem(100px);
                 margin-right: 10%;
                 text-align: center;
                 text-transform: uppercase;
@@ -41,8 +41,8 @@
 
                 &__block {
                     background: white;
-                    width: 20px;
-                    height: 20px;
+                    width: rem(20px);
+                    height: rem(20px);
                     transition: .5s;
                 }
             }

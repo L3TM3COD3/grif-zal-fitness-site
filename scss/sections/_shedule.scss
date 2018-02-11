@@ -1,7 +1,5 @@
 .shedule {
-    background: url('../../img/bg/shedule-bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+  background: white;
 
     &__container {
         display: flex;
@@ -12,8 +10,8 @@
     }
 
     &__content {
-        width: 90%;
-        height: 90%;
+        width: 100%;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -21,33 +19,31 @@
 }
 
 table.blueTable {
-    border: 1px solid $black;
     background-color: white;
     width: 100%;
     height: 100%;
     border-collapse: collapse;
   }
   table.blueTable td, table.blueTable th {
-    border: 1px solid $black;
-    padding: 3px 2px;
+    padding: rem(3px) rem(2px);
   }
   table.blueTable tbody td {
-    font-size: 24px;
+    font-size: rem(24px);
     text-align: center;
     text-transform: uppercase;
+    border: rem(1px) solid $black;
   }
   table.blueTable thead {
     background: $low-orange;
-    border-bottom: 1px solid $black;
   }
   table.blueTable thead th {
-    background: $low-orange;
+    border-right: rem(1px) solid $low-orange;
+    background: $black;
     padding: 1%;
-    font-size: 24px;
+    font-size: rem(24px);
     text-align: center;
     font-weight: bold;
     color: #FFFFFF;
-    border-left: 1px solid $black;
     text-transform: uppercase;
   }
   table.blueTable thead th:first-child {
@@ -55,14 +51,13 @@ table.blueTable {
   }
   
   table.blueTable tfoot {
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: bold;
-    color: $black;
-    background: $low-orange;
-    border-top: 1px solid #333333;
+    color: white;
+    background: $black;
   }
   table.blueTable tfoot td {
-    font-size: 24px;
+    font-size: rem(24px);
     padding: 1%;
     font-weight: normal;
     font-style: italic;

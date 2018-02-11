@@ -25,12 +25,20 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @include normal {
+                height: 83%;   
+            }
             
             &__title {
                 color: $black;
                 text-transform: uppercase;
                 line-height: 1.5;
-                font-size: 72px;
+                font-size: rem(72px);
+                
+                @include normal {
+                    font-size: 60px;   
+                }
 
                 .athlete-marker {
                     background: white;
@@ -41,7 +49,7 @@
 
             &__desc {
                 color: white;
-                font-size: 24px;
+                font-size: rem(24px);
             }
 
             &__btns {
@@ -60,17 +68,21 @@
                     justify-content: center;
                     align-items: center;
                     text-transform: uppercase;
-                    font-size: 22px;
+                    font-size: rem(22px);
                     transition: .3s;
-                    -webkit-box-shadow: 0px 10px 42px 3px rgba(0,0,0,0.77);
-                    -moz-box-shadow: 0px 10px 42px 3px rgba(0,0,0,0.77);
-                    box-shadow: 0px 10px 42px 3px rgba(0,0,0,0.77);
+                    -webkit-box-shadow: rem(0px) rem(10px) rem(42px) rem(3px) rgba(0,0,0,0.77);
+                    -moz-box-shadow: rem(0px) rem(10px) rem(42px) rem(3px) rgba(0,0,0,0.77);
+                    box-shadow: rem(0px) rem(10px) rem(42px) rem(3px) rgba(0,0,0,0.77);
+
+                    @include normal {
+                        width: 55%;        
+                    }
 
                     &:hover {
-                        transform: translateY(10px);
-                        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                        -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+                        transform: translateY(rem(10px));
+                        -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                        -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                        box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
                         background: $low-orange;
                     }
                 }
@@ -84,17 +96,17 @@
                     justify-content: center;
                     align-items: center;
                     text-transform: uppercase;
-                    font-size: 22px;
+                    font-size: rem(22px);
                     transition: .3s;
-                    -webkit-box-shadow: 0px 10px 42px 3px rgba(0,0,0,0.77);
-                    -moz-box-shadow: 0px 10px 42px 3px rgba(0,0,0,0.77);
-                    box-shadow: 0px 10px 42px 3px rgba(0,0,0,0.77);
+                    -webkit-box-shadow: rem(0px) rem(10px) rem(42px) rem(3px) rgba(0,0,0,0.77);
+                    -moz-box-shadow: rem(0px) rem(10px) rem(42px) rem(3px) rgba(0,0,0,0.77);
+                    box-shadow: rem(0px) rem(10px) rem(42px) rem(3px) rgba(0,0,0,0.77);
 
                     &:hover {
-                        transform: translateY(10px);
-                        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                        -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+                        transform: translateY(rem(10px));
+                        -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                        -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                        box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
                         background: $low-orange;
                     }
                 }
@@ -104,7 +116,7 @@
         &__ways {
             width: 50%;
             height: 100%;
-            border: 15px solid white;
+            border: rem(15px) solid white;
             padding: 2%;
 
             &__list {
@@ -145,8 +157,8 @@
 
                         &__title {
                             text-transform: uppercase;
-                            font-size: 32px;
-                            letter-spacing: 5px;
+                            font-size: rem(32px);
+                            letter-spacing: rem(5px);
                             transition: .3s;
                             text-align: center;
                         }
@@ -154,8 +166,8 @@
                         &__hover {
                             position: absolute;
                             text-transform: uppercase;
-                            font-size: 32px;
-                            letter-spacing: 5px;
+                            font-size: rem(32px);
+                            letter-spacing: rem(5px);
                             opacity: 0;
                             transition: .3s;
                             color: $black;
@@ -167,16 +179,16 @@
                         background-repeat: no-repeat;
                         background-size: cover;
                         background-position: center;
-                        -webkit-box-shadow: 15px 15px 39px -1px rgba(0,0,0,0.75);
-                        -moz-box-shadow: 15px 15px 39px -1px rgba(0,0,0,0.75);
-                        box-shadow: 15px 15px 39px -1px rgba(0,0,0,0.75);
+                        -webkit-box-shadow: rem(15px) rem(15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        -moz-box-shadow: rem(15px) rem(15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        box-shadow: rem(15px) rem(15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
                         transition: .3s;
 
                         &:hover {
-                            -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            transform: translate(10px, 10px);
+                            -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            transform: translate(rem(10px), rem(10px));
                         }
                     }
 
@@ -185,16 +197,16 @@
                         background-repeat: no-repeat;
                         background-size: cover;
                         background-position: center;
-                        -webkit-box-shadow: 0px 15px 39px -1px rgba(0,0,0,0.75);
-                        -moz-box-shadow: 0px 15px 39px -1px rgba(0,0,0,0.75);
-                        box-shadow: 0px 15px 39px -1px rgba(0,0,0,0.75);
+                        -webkit-box-shadow: rem(0px) rem(15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        -moz-box-shadow: rem(0px) rem(15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        box-shadow: rem(0px) rem(15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
                         transition: .3s;
 
                         &:hover {
-                            -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            transform: translate(0px, 10px);
+                            -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            transform: translate(rem(0px), rem(10px));
                         }
                     }
 
@@ -203,16 +215,16 @@
                         background-repeat: no-repeat;
                         background-size: cover;
                         background-position: center;
-                        -webkit-box-shadow: -15px 15px 39px -1px rgba(0,0,0,0.75);
-                        -moz-box-shadow: -15px 15px 39px -1px rgba(0,0,0,0.75);
-                        box-shadow: -15px 15px 39px -1px rgba(0,0,0,0.75);
+                        -webkit-box-shadow: rem(-15px) rem(15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        -moz-box-shadow: rem(-15px) rem(15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        box-shadow: rem(-15px) rem(15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
                         transition: .3s;
 
                         &:hover {
-                            -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            transform: translate(-10px, 10px);
+                            -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            transform: translate(rem(-10px), rem(10px));
                         }
                     }
 
@@ -221,16 +233,16 @@
                         background-repeat: no-repeat;
                         background-size: cover;
                         background-position: center;
-                        -webkit-box-shadow: 15px 0px 39px -1px rgba(0,0,0,0.75);
-                        -moz-box-shadow: 15px 0px 39px -1px rgba(0,0,0,0.75);
-                        box-shadow: 15px 0px 39px -1px rgba(0,0,0,0.75);
+                        -webkit-box-shadow: rem(15px) rem(0px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        -moz-box-shadow: rem(15px) rem(0px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        box-shadow: rem(15px) rem(0px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
                         transition: .3s;
 
                         &:hover {
-                            -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            transform: translate(10px, 0px);
+                            -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            transform: translate(rem(10px), rem(0px));
                         }
                     }
 
@@ -239,15 +251,15 @@
                         background-repeat: no-repeat;
                         background-size: cover;
                         background-position: center;
-                        -webkit-box-shadow: 0px 0px 69px 3px rgba(0,0,0,0.79);
-                        -moz-box-shadow: 0px 0px 69px 3px rgba(0,0,0,0.79);
-                        box-shadow: 0px 0px 69px 3px rgba(0,0,0,0.79);
+                        -webkit-box-shadow: rem(0px) rem(0px) rem(69px) rem(3px) rgba(0,0,0,0.79);
+                        -moz-box-shadow: rem(0px) rem(0px) rem(69px) rem(3px) rgba(0,0,0,0.79);
+                        box-shadow: rem(0px) rem(0px) rem(69px) rem(3px) rgba(0,0,0,0.79);
                         transition: .3s;
 
                         &:hover {
-                            -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+                            -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
                         }
                     }
 
@@ -256,16 +268,16 @@
                         background-repeat: no-repeat;
                         background-size: cover;
                         background-position: center;
-                        -webkit-box-shadow: -15px 0px 39px -1px rgba(0,0,0,0.75);
-                        -moz-box-shadow: -15px 0px 39px -1px rgba(0,0,0,0.75);
-                        box-shadow: -15px 0px 39px -1px rgba(0,0,0,0.75);
+                        -webkit-box-shadow: rem(-15px) rem(0px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        -moz-box-shadow: rem(-15px) rem(0px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        box-shadow: rem(-15px) rem(0px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
                         transition: .3s;
 
                         &:hover {
-                            -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            transform: translate(-10px, 0px);
+                            -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            transform: translate(rem(-10px), rem(0px));
                         }
                     }
 
@@ -274,16 +286,16 @@
                         background-repeat: no-repeat;
                         background-size: cover;
                         background-position: center;
-                        -webkit-box-shadow: 15px -15px 39px -1px rgba(0,0,0,0.75);
-                        -moz-box-shadow: 15px -15px 39px -1px rgba(0,0,0,0.75);
-                        box-shadow: 15px -15px 39px -1px rgba(0,0,0,0.75);
+                        -webkit-box-shadow: rem(15px) rem(-15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        -moz-box-shadow: rem(15px) rem(-15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        box-shadow: rem(15px) rem(-15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
                         transition: .3s;
 
                         &:hover {
-                            -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            transform: translate(10px, -10px);
+                            -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            transform: translate(rem(10px), rem(-10px));
                         }
                     }
 
@@ -292,16 +304,16 @@
                         background-repeat: no-repeat;
                         background-size: cover;
                         background-position: center;
-                        -webkit-box-shadow: 0px -15px 39px -1px rgba(0,0,0,0.75);
-                        -moz-box-shadow: 0px -15px 39px -1px rgba(0,0,0,0.75);
-                        box-shadow: 0px -15px 39px -1px rgba(0,0,0,0.75);
+                        -webkit-box-shadow: rem(0px) rem(-15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        -moz-box-shadow: rem(0px) rem(-15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        box-shadow: rem(0px) rem(-15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
                         transition: .3s;
 
                         &:hover {
-                            -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            transform: translate(0px, -10px);
+                            -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            transform: translate(rem(0px), rem(-10px));
                         }
                     }
 
@@ -310,16 +322,16 @@
                         background-repeat: no-repeat;
                         background-size: cover;
                         background-position: center;
-                        -webkit-box-shadow: -15px -15px 39px -1px rgba(0,0,0,0.75);
-                        -moz-box-shadow: -15px -15px 39px -1px rgba(0,0,0,0.75);
-                        box-shadow: -15px -15px 39px -1px rgba(0,0,0,0.75);
+                        -webkit-box-shadow: rem(-15px) rem(-15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        -moz-box-shadow: rem(-15px) rem(-15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        box-shadow: rem(-15px) rem(-15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
                         transition: .3s;
                         
                         &:hover {
-                            -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                            transform: translate(-10px, -10px);
+                            -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            transform: translate(rem(-10px), rem(-10px));
                         }
                     }
                 }

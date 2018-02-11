@@ -25,7 +25,7 @@
                 background: white;
                 width: 100%;
                 height: 100%;
-                font-size: 24px;
+                font-size: rem(24px);
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
@@ -38,10 +38,10 @@
                 }
 
                 &__title {
-                    font-size: 48px;
+                    font-size: rem(48px);
                     text-transform: uppercase;
                     color: $black;
-                    letter-spacing: 42px;
+                    letter-spacing: rem(42px);
                 }
 
                 &__location {
@@ -79,9 +79,13 @@
                 justify-content: space-around;
 
                 &__title {
-                    font-size: 28px;
+                    font-size: rem(28px);
                     text-transform: uppercase;
                     color: white;
+
+                    @include normal {
+                        font-size: 22px;    
+                    }   
                 }
 
                 &__row {
@@ -99,46 +103,46 @@
 
                         &__title {
                             color: white;
-                            font-size: 24px;
+                            font-size: rem(24px);
                         }
 
                         &__name {
                             height: 45%;
                             outline: none;
-                            border: 2px solid transparent;
+                            border: rem(2px) solid transparent;
                             transition: .3s;
 
                             &:hover {
-                                border: 2px solid $low-orange;
+                                border: rem(2px) solid $low-orange;
                             }
 
                             &:focus {
-                                border: 2px solid $low-orange;
+                                border: rem(2px) solid $low-orange;
                                 color: $black;
                             }
 
                             &[placeholder] {
-                                padding-left: 10px;
+                                padding-left: rem(10px);
                             }
                         }
 
                         &__tel {
                             height: 45%;
                             outline: none;
-                            border: 2px solid transparent;
+                            border: rem(2px) solid transparent;
                             transition: .3s;
 
                             &:hover {
-                                border: 2px solid $low-orange;
+                                border: rem(2px) solid $low-orange;
                             }
 
                             &:focus {
-                                border: 2px solid $low-orange;
+                                border: rem(2px) solid $low-orange;
                                 color: $black;
                             }
 
                             &[placeholder] {
-                                padding-left: 10px;
+                                padding-left: rem(10px);
                             }
                         }
                     }

@@ -2,9 +2,9 @@
     background-image: url('../../img/bg/hero-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-box-shadow: 0px 9px 60px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 9px 60px -1px rgba(0,0,0,0.75);
-    box-shadow: 0px 9px 60px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: rem(0px) rem(9px) rem(60px) rem(-1px) rgba(0,0,0,0.75);
+    -moz-box-shadow: rem(0px) rem(9px) rem(60px) rem(-1px) rgba(0,0,0,0.75);
+    box-shadow: rem(0px) rem(9px) rem(60px) rem(-1px) rgba(0,0,0,0.75);
     z-index: 2;
 
     &__container {
@@ -30,8 +30,12 @@
             &__title {
                 text-transform: uppercase;
                 color: $black;
-                font-size: 82px;
+                font-size: rem(82px);
                 height: 50%;
+
+                @include normal {
+                 font-size: 64px;      
+                }
 
                 .marker {
                     background: white;
@@ -47,9 +51,9 @@
 
 
                 &__list {
-                    font-size: 28px;
+                    font-size: rem(28px);
                     font-family: pobedabold;
-                    letter-spacing: 2px;
+                    letter-spacing: rem(2px);
                     color: white;
                     height: 100%;
                     width: 58%;
@@ -57,8 +61,12 @@
                     flex-direction: column;
                     justify-content: space-around;
                     text-transform: uppercase;
-                    border: 5px solid white;
+                    border: rem(5px) solid white;
                     padding: 2%;
+
+                    @include normal {
+                       font-size: 21px;
+                    }
                 }
             }
 
@@ -75,11 +83,11 @@
                     font-family: cervo;
                     opacity: .9;
                     text-transform: uppercase;
-                    font-size: 22px;
+                    font-size: rem(22px);
                     transition: .3s;
 
                     &:hover {
-                        transform: translateX(5px);
+                        transform: translateX(rem(5px));
                         text-decoration: none;
                         color: $high-orange;
                     }
@@ -107,18 +115,18 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    font-size: 28px;
+                    font-size: rem(28px);
                     text-transform: uppercase;
                     transition: .3s;
-                    -webkit-box-shadow: 0px 10px 42px 3px rgba(0,0,0,0.77);
-                    -moz-box-shadow: 0px 10px 42px 3px rgba(0,0,0,0.77);
-                    box-shadow: 0px 10px 42px 3px rgba(0,0,0,0.77);
+                    -webkit-box-shadow: rem(0px) rem(10px) rem(42px) rem(3px) rgba(0,0,0,0.77);
+                    -moz-box-shadow: rem(0px) rem(10px) rem(42px) rem(3px) rgba(0,0,0,0.77);
+                    box-shadow: rem(0px) rem(10px) rem(42px) rem(3px) rgba(0,0,0,0.77);
 
                     &:hover {
-                        transform: translateY(10px);
-                        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                        -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+                        transform: translateY(rem(10px));
+                        -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                        -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                        box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
                         color: white;
                     }
 

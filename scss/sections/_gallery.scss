@@ -6,15 +6,14 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        top: 0px;
+        top: rem(0px);
         background: rgba(0, 0, 0, .6);
-        transition: .8s;
+        transition: .3s;
         color: $low-orange;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid $low-orange;
+        border-bottom: rem(5px) solid $low-orange;
         }
 
     &__container {
@@ -40,22 +39,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 42px;
+            font-size: rem(42px);
             text-transform: uppercase;
             position: relative;
-            -webkit-box-shadow: 30px 24px 92px -12px rgba(0,0,0,0.39);
-            -moz-box-shadow: 30px 24px 92px -12px rgba(0,0,0,0.39);
-            box-shadow: 30px 24px 92px -12px rgba(0,0,0,0.39);
+            -webkit-box-shadow: rem(30px) rem(24px) rem(92px) rem(-12px) rgba(0,0,0,0.39);
+            -moz-box-shadow: rem(30px) rem(24px) rem(92px) rem(-12px) rgba(0,0,0,0.39);
+            box-shadow: rem(30px) rem(24px) rem(92px) rem(-12px) rgba(0,0,0,0.39);
             transition: .3s;
             overflow: hidden;
 
             &:hover .gallery-overlay {
-                top: -700px;
-            }
-
-            &:hover {
-                border-top: 5px solid $low-orange;
-                border-bottom: 5px solid transparent;
+                top: -99%;
             }
 
             &__photo {
@@ -63,10 +57,10 @@
             }
 
             &:hover {
-                -webkit-box-shadow: 15px 9px 40px -6px rgba(0,0,0,0.39);
-                -moz-box-shadow: 15px 9px 40px -6px rgba(0,0,0,0.39);
-                box-shadow: 15px 9px 40px -6px rgba(0,0,0,0.39);
-                transform: translateY(15px);
+                -webkit-box-shadow: rem(15px) rem(9px) rem(40px) rem(-6px) rgba(0,0,0,0.39);
+                -moz-box-shadow: rem(15px) rem(9px) rem(40px) rem(-6px) rgba(0,0,0,0.39);
+                box-shadow: rem(15px) rem(9px) rem(40px) rem(-6px) rgba(0,0,0,0.39);
+                transform: translateY(rem(15px));
                 cursor: pointer;
             }
 
@@ -117,11 +111,16 @@
 
 .section-name {
     color: white;
-    font-size: 200px;
+    font-size: rem(200px);
     position: absolute;
     top: 38%;
     left: 8%;
     text-transform: uppercase;
     opacity: .8;
-    letter-spacing: 150px;
+    letter-spacing: rem(150px);
+
+    @include normal {
+        letter-spacing: 110px;
+        top: 33%;    
+    }
 }
