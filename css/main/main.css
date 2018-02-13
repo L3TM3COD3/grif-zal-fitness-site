@@ -1273,7 +1273,7 @@ a {
         background-position: center;
         background-size: cover; }
       .gallery__zone__item--5 {
-        background-image: url("../../img/photos/hair-4.jpg");
+        background-image: url("../../img/photos/hair-5.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
@@ -1442,6 +1442,24 @@ a {
               color: #333333; }
             .map__container__txt__form__row .input__row__tel[placeholder] {
               padding-left: 0.625rem; }
+
+.submit-btn {
+  background: white;
+  border: none;
+  outline: none;
+  height: 15%;
+  width: 98%;
+  text-transform: uppercase;
+  font-family: cervo;
+  font-size: 24px;
+  letter-spacing: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+  .submit-btn:hover {
+    border: 2px solid #fea500; }
 
 .ticket {
   background-image: url("../../img/bg/price-bg.jpg");

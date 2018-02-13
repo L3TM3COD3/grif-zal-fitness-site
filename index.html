@@ -501,18 +501,19 @@
 							</div>
 						</div>
 					</div>
-					<form action="get" class="map__container__txt__form">
+					<form action="mail.php" method="post" id="form-id" class="map__container__txt__form">
 						<div class="map__container__txt__form__title">Запишитесь на бесплатную тестовую неделю!</div>
 						<div class="map__container__txt__form__row">
 							<div class="input__row">
 								<div class="input__row__title">Ваше имя</div>
-								<input type="text" placeholder="Роман" class="input__row__name">
+								<input type="text" id="name-id" name='name' placeholder="Роман" class="input__row__name">
 							</div>
 							<div class="input__row">
 								<div class="input__row__title">Ваш номер телефона</div>
-								<input type="text" placeholder="89120000000" class="input__row__tel">
+								<input required type="tel" autocomplete="on" id="tel-id" name='tel' placeholder="89120000000" class="input__row__tel">
 							</div>
 						</div>
+						<input type="submit" name="btn" value="отправить" class="submit-btn">
 					</form>
 				</div>
 				<div class="map__container__map-ya">
@@ -623,6 +624,7 @@
 			</ul>
 		</div>
 </body>
+<script src="js/ajax.js"></script>
 <script src="js/fullPage-settings.js"></script>
 <script src="js/lightgallery.min.js"></script>
 <script src="js/lightgallery-settings.js"></script>
